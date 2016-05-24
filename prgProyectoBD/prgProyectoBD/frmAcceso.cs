@@ -16,5 +16,10 @@ namespace prgProyectoBD
         {
             InitializeComponent();
         }
+
+        private void frmAcceso_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
