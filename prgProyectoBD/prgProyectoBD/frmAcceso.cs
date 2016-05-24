@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace prgProyectoBD
 {
-    public partial class Form1 : Form
+    public partial class frmAcceso : Form
     {
-        public Form1()
+        public frmAcceso()
         {
             InitializeComponent();
         }
