@@ -20,6 +20,7 @@ namespace prgProyectoBD
         private void frmAcceso_Load(object sender, EventArgs e)
         {
 
+
         }
     }
 }
