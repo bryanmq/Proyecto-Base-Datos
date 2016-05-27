@@ -22,5 +22,11 @@ namespace prgProyectoBD
 
 
         }
+
+        private void btnAceptar_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Vamos compañer@s", "Bases de datos",MessageBoxButtons.OKCancel, MessageBoxIcon.Asterisk);
+
+        }
     }
 }
