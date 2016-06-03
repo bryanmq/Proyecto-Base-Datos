@@ -11,10 +11,10 @@ using System.Windows.Forms;
 
 namespace Practica_1
 {
-    public partial class frmAgregarEstudiantes : Form
+    public partial class frmAdmEstudiantes : Form
     {
       
-        public frmAgregarEstudiantes()
+        public frmAdmEstudiantes()
         {
             InitializeComponent();
            

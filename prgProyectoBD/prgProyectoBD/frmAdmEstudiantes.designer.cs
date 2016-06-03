@@ -1,6 +1,6 @@
 ﻿namespace Practica_1
 {
-    partial class frmAgregarEstudiantes
+    partial class frmAdmEstudiantes
     {
         /// <summary>
         /// Variable del diseñador requerida.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAgregarEstudiantes));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAdmEstudiantes));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -119,7 +119,7 @@
             this.button1.Name = "button1";
             this.button1.UseVisualStyleBackColor = false;
             // 
-            // frmAgregarEstudiantes
+            // frmAdmEstudiantes
             // 
             this.AllowDrop = true;
             resources.ApplyResources(this, "$this");
@@ -134,7 +134,7 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.dataGridView1);
-            this.Name = "frmAgregarEstudiantes";
+            this.Name = "frmAdmEstudiantes";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
