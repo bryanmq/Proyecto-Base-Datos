@@ -42,6 +42,10 @@ namespace prgProyectoBD
                 txtEmail.Text = estudiante.email;
                 btnAceptar.Text = "Modificar";
             }
+            else
+            {
+                txtCarnet.Enabled = true;
+            }
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
@@ -51,10 +55,24 @@ namespace prgProyectoBD
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
+            estudiante = new Estudiante(txtCarnet.Text, txtNombre.Text, txtDireccion.Text, Convert.ToDateTime(dtpFechaNacimiento.Text), mskTel.Text, txtEmail.Text);
             if (index == 1)
             {
-
+                lnEstudiantes.agregarEstudiante(estudiante);
+                refresh();
+                this.Dispose();
             }
+            else
+            {
+                lnEstudiantes.modificarEstudiante(estudiante);
+                refresh();
+                this.Dispose();
+            }
+        }
+
+        public void refresh()
+        {
+            dgvEstudiantes.DataSource = lnEstudiantes.listaEstudiantes();
         }
     }
 }

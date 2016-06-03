@@ -54,5 +54,10 @@ namespace prgProyectoBD
                 dgvEstudiantes.DataSource = lnEstudiantes.listaEstudiantes();
             }
         }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            dgvEstudiantes.DataSource = lnEstudiantes.listaEstudiantes();
+        }
     }
 }

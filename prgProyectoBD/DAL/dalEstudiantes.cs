@@ -111,177 +111,40 @@ namespace DAL
 
         }
 
-
-
-
-        /*
-        public List<Entidades.Empleado> listaEmpleados()
+        public void agregarEstudiante(Estudiante estudiante)
         {
-            List<Entidades.Empleado> empleados = new List<Empleado>();
-
             MySqlCommand cmd = new MySqlCommand();
-            cmd.CommandText = "Select idEmpleado, nombre, telefono, salario, idDepartamento from  curso.empleado";
+            cmd.CommandText = "insert into proyectoABD.tbEstudiante (carnet, nombre, direccion, fechaNacimiento, telefono, email) values(@carnet, @nombre, @direccion, @fechaNacimiento, @telefono, @email)";
             string connectionString = ConfigurationManager.ConnectionStrings["db"].ConnectionString;
 
             MySqlConnection con = new MySqlConnection(connectionString);
-            cmd.Connection = con;
-            con.Open();
-
-            using (MySqlDataReader reader = cmd.ExecuteReader())
-            {
-                while (reader.Read())
-                {
-                    try
-                    {
-                        Empleado Empleado = new Empleado();
-
-                        Empleado.idEmpleado = reader.GetInt16(0);
-                        Empleado.nombre = reader.GetString(1);
-                        Empleado.telefono = reader.GetString(2);
-                        Empleado.salario = reader.GetInt16(3);
-                        Empleado.idDepartamento = reader.GetInt16(4);
-
-                        empleados.Add(Empleado);
-
-                    }
-                    catch (Exception ex)
-                    {
-                        throw ex;
-                    }
-                }
-                con.Close();
-            }
-
-            return empleados;
-        }
-
-        public List<Entidades.Empleado> listaUnEmpleado(int codigo)
-        {
-            List<Entidades.Empleado> empleados = new List<Empleado>();
-
-            MySqlCommand cmd = new MySqlCommand();
-            cmd.CommandText = "Select idEmpleado, nombre, telefono, salario, idDepartamento from  curso.empleado where idEmpleado=@codigo";
-            string connectionString = ConfigurationManager.ConnectionStrings["db"].ConnectionString;
-
-            MySqlConnection con = new MySqlConnection(connectionString);
-            cmd.Parameters.Add("@codigo", MySqlDbType.Int16).Value = codigo;
-            cmd.Connection = con;
-            con.Open();
-
-            using (MySqlDataReader reader = cmd.ExecuteReader())
-            {
-                while (reader.Read())
-                {
-                    try
-                    {
-                        Empleado Empleado = new Empleado();
-
-                        Empleado.idEmpleado = reader.GetInt16(0);
-                        Empleado.nombre = reader.GetString(1);
-                        Empleado.telefono = reader.GetString(2);
-                        Empleado.salario = reader.GetInt16(3);
-                        Empleado.idDepartamento = reader.GetInt16(4);
-
-                        empleados.Add(Empleado);
-
-                    }
-                    catch (Exception ex)
-                    {
-                        throw ex;
-                    }
-                }
-                con.Close();
-            }
-
-            return empleados;
-        }
-
-        public void eliminaUnEmpleado(int codigo)
-        {
-            MySqlCommand cmd = new MySqlCommand();
-            cmd.CommandText = "delete from curso.empleado where idEmpleado=@codigo";
-            string connectionString = ConfigurationManager.ConnectionStrings["db"].ConnectionString;
-
-            MySqlConnection con = new MySqlConnection(connectionString);
-            cmd.Parameters.Add("@codigo", MySqlDbType.Int16).Value = codigo;
-            cmd.Connection = con;
-            con.Open();
-            try
-            {
-                cmd.ExecuteNonQuery();
-            }
-            catch (Exception e)
-            {
-                throw e;
-            }
-
-        }
-
-        public void agregarUnEmpleado(Empleado empleados)
-        {
-            MySqlCommand cmd = new MySqlCommand();
-            cmd.CommandText = "insert into curso.empleado(nombre, telefono, salario, idDepartamento) values(@nombre, @tel, @sal, @idDep)";
-            string connectionString = ConfigurationManager.ConnectionStrings["db"].ConnectionString;
-
-            MySqlConnection con = new MySqlConnection(connectionString);
-            cmd.Parameters.Add("@nombre", MySqlDbType.String).Value = empleados.nombre;
-            cmd.Parameters.Add("@tel", MySqlDbType.String).Value = empleados.telefono;
-            cmd.Parameters.Add("@sal", MySqlDbType.Int16).Value = empleados.salario;
-            cmd.Parameters.Add("@idDep", MySqlDbType.Int16).Value = empleados.idDepartamento;
+            cmd.Parameters.Add("@carnet", MySqlDbType.String).Value = estudiante.carnet;
+            cmd.Parameters.Add("@nombre", MySqlDbType.String).Value = estudiante.nombre;
+            cmd.Parameters.Add("@direccion", MySqlDbType.String).Value = estudiante.direccion;
+            cmd.Parameters.Add("@fechaNacimiento", MySqlDbType.Timestamp).Value = estudiante.fechaNacimiento;
+            cmd.Parameters.Add("@telefono", MySqlDbType.String).Value = estudiante.telefono;
+            cmd.Parameters.Add("@email", MySqlDbType.String).Value = estudiante.email;
             cmd.Connection = con;
             con.Open();
             cmd.ExecuteReader();
 
         }
 
-        public Empleado getEmpleado(int codigo)
-        {
-            Empleado empleado = new Empleado();
-            MySqlCommand cmd = new MySqlCommand();
-            cmd.CommandText = "Select idEmpleado, nombre, telefono, salario, idDepartamento from  curso.empleado where idEmpleado=@codigo";
-            string connectionString = ConfigurationManager.ConnectionStrings["db"].ConnectionString;
-
-            MySqlConnection con = new MySqlConnection(connectionString);
-            cmd.Parameters.Add("@codigo", MySqlDbType.Int16).Value = codigo;
-            cmd.Connection = con;
-            con.Open();
-            using (MySqlDataReader reader = cmd.ExecuteReader())
-            {
-                while (reader.Read())
-                {
-                    try
-                    {
-                        empleado.idEmpleado = reader.GetInt16(0);
-                        empleado.nombre = reader.GetString(1);
-                        empleado.telefono = reader.GetString(2);
-                        empleado.salario = reader.GetInt16(3);
-                        empleado.idDepartamento = reader.GetInt16(4);
-                    }
-                    catch (Exception ex)
-                    {
-                        throw ex;
-                    }
-                }
-                con.Close();
-            }
-            return empleado;
-        }
-
-        public void modificar(Empleado emp)
+        public void modificarEstudiante(Estudiante estudiante)
         {
             MySqlCommand cmd = new MySqlCommand();
-            cmd.CommandText = "update empleado set nombre=@nombre, telefono=@tel, salario=@sal where idEmpleado=@codigo";
+            cmd.CommandText = "update proyectoABD.tbEstudiante set nombre=@nombre, direccion=@direccion, fechaNacimiento=@fechaNacimiento, telefono=@telefono, email=@email where carnet=@carnet";
             string connectionString = ConfigurationManager.ConnectionStrings["db"].ConnectionString;
             MySqlConnection con = new MySqlConnection(connectionString);
-            cmd.Parameters.Add("@nombre", MySqlDbType.String).Value = emp.nombre;
-            cmd.Parameters.Add("@tel", MySqlDbType.String).Value = emp.telefono;
-            cmd.Parameters.Add("@sal", MySqlDbType.Int16).Value = emp.salario;
-            cmd.Parameters.Add("@idDep", MySqlDbType.Int16).Value = emp.idDepartamento;
-            cmd.Parameters.Add("@codigo", MySqlDbType.Int16).Value = emp.idEmpleado;
+            cmd.Parameters.Add("@carnet", MySqlDbType.String).Value = estudiante.carnet;
+            cmd.Parameters.Add("@nombre", MySqlDbType.String).Value = estudiante.nombre;
+            cmd.Parameters.Add("@direccion", MySqlDbType.String).Value = estudiante.direccion;
+            cmd.Parameters.Add("@fechaNacimiento", MySqlDbType.Timestamp).Value = estudiante.fechaNacimiento;
+            cmd.Parameters.Add("@telefono", MySqlDbType.String).Value = estudiante.telefono;
+            cmd.Parameters.Add("@email", MySqlDbType.String).Value = estudiante.email;
             cmd.Connection = con;
             con.Open();
             cmd.ExecuteNonQuery();
         }
-         */
     }
 }

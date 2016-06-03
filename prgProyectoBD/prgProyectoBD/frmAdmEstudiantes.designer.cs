@@ -85,6 +85,7 @@
             this.btnRefresh.Image = global::prgProyectoBD.Properties.Resources.refresh;
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.UseVisualStyleBackColor = false;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
             // btnAgregar
             // 

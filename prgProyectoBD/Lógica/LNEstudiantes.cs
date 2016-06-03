@@ -31,5 +31,15 @@ namespace Lógica
         {
             dalEstudiantes.eliminarEstudiante(carnet);
         }
+
+        public void agregarEstudiante(Estudiante estudiante)
+        {
+            dalEstudiantes.agregarEstudiante(estudiante);
+        }
+
+        public void modificarEstudiante(Estudiante estudiante)
+        {
+            dalEstudiantes.modificarEstudiante(estudiante);
+        }
     }
 }

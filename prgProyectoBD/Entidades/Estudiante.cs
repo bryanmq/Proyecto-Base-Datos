@@ -13,6 +13,21 @@ namespace Entidades
         private DateTime _fechaNacimiento;
         #endregion
 
+        public Estudiante(String carnet, String nombre, String direccion, DateTime fechaNacimiento, String telefono, String email)
+        {
+            this._carnet = carnet;
+            this._nombre = nombre;
+            this._direccion = direccion;
+            this._fechaNacimiento = fechaNacimiento;
+            this._telefono = telefono;
+            this._email = email;
+        }
+
+        public Estudiante()
+        {
+         
+        }
+
         public String carnet
         {
             get { return _carnet; }
