@@ -34,12 +34,12 @@
             this.label3 = new System.Windows.Forms.Label();
             this.GroupBox = new System.Windows.Forms.GroupBox();
             this.btnRefresh = new System.Windows.Forms.Button();
+            this.btnAgregar = new System.Windows.Forms.Button();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.dgvEstudiantes = new System.Windows.Forms.DataGridView();
-            this.btnAgregar = new System.Windows.Forms.Button();
             this.GroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEstudiantes)).BeginInit();
             this.SuspendLayout();
@@ -85,6 +85,16 @@
             this.btnRefresh.Image = global::prgProyectoBD.Properties.Resources.refresh;
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.UseVisualStyleBackColor = false;
+            // 
+            // btnAgregar
+            // 
+            this.btnAgregar.BackColor = System.Drawing.Color.Transparent;
+            this.btnAgregar.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.btnAgregar, "btnAgregar");
+            this.btnAgregar.Image = global::prgProyectoBD.Properties.Resources.add;
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.UseVisualStyleBackColor = false;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // btnBuscar
             // 
@@ -134,22 +144,12 @@
             this.dgvEstudiantes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvEstudiantes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEstudiantes_CellContentClick);
             // 
-            // btnAgregar
-            // 
-            this.btnAgregar.BackColor = System.Drawing.Color.Transparent;
-            this.btnAgregar.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.btnAgregar, "btnAgregar");
-            this.btnAgregar.Image = global::prgProyectoBD.Properties.Resources.add;
-            this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.UseVisualStyleBackColor = false;
-            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
-            // 
             // frmAdmEstudiantes
             // 
             this.AllowDrop = true;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ControlBox = false;
             this.Controls.Add(this.dgvEstudiantes);
             this.Controls.Add(this.GroupBox);
