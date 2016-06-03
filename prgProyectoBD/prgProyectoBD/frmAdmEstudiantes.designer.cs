@@ -45,7 +45,7 @@
             // 
             // dgvEstudiantes
             // 
-            this.dgvEstudiantes.BackgroundColor = System.Drawing.Color.SpringGreen;
+            this.dgvEstudiantes.BackgroundColor = System.Drawing.Color.MediumSpringGreen;
             this.dgvEstudiantes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvEstudiantes.GridColor = System.Drawing.SystemColors.Control;
             resources.ApplyResources(this.dgvEstudiantes, "dgvEstudiantes");
@@ -135,7 +135,7 @@
             this.AllowDrop = true;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.ControlBox = false;
             this.Controls.Add(this.GroupBox);
             this.Controls.Add(this.label1);

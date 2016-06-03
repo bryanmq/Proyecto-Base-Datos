@@ -68,6 +68,7 @@
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip;
             this.Name = "mdiMenu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Bienvenid@s";
             this.Load += new System.EventHandler(this.mdiMenu_Load);
             this.menuStrip.ResumeLayout(false);
