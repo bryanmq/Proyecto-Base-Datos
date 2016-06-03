@@ -26,5 +26,10 @@ namespace Lógica
         {
             return dalEstudiantes.getEstudiante(codigo);
         }
+
+        public void eliminarEstudiante(String carnet)
+        {
+            dalEstudiantes.eliminarEstudiante(carnet);
+        }
     }
 }

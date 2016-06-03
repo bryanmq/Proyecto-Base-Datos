@@ -31,13 +31,17 @@ namespace prgProyectoBD
 
         private void frmEstudiantes_Load(object sender, EventArgs e)
         {
-            estudiante = lnEstudiantes.listaEstudiante(Convert.ToString(dgvEstudiantes.CurrentRow.Cells[0].Value.ToString()));
-            txtCarnet.Text = estudiante.carnet;
-            txtNombre.Text = estudiante.nombre;
-            txtDireccion.Text = estudiante.direccion;
-            dtpFechaNacimiento.Value = estudiante.fechaNacimiento;
-            mskTel.Text = estudiante.telefono;
-            txtEmail.Text = estudiante.email;
+            if (index != 1)
+            {
+                estudiante = lnEstudiantes.listaEstudiante(Convert.ToString(dgvEstudiantes.CurrentRow.Cells[0].Value.ToString()));
+                txtCarnet.Text = estudiante.carnet;
+                txtNombre.Text = estudiante.nombre;
+                txtDireccion.Text = estudiante.direccion;
+                dtpFechaNacimiento.Value = estudiante.fechaNacimiento;
+                mskTel.Text = estudiante.telefono;
+                txtEmail.Text = estudiante.email;
+                btnAceptar.Text = "Modificar";
+            }
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)

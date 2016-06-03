@@ -90,6 +90,27 @@ namespace DAL
             return estudiante;
         }
 
+        public void eliminarEstudiante(String carnet)
+        {
+            MySqlCommand cmd = new MySqlCommand();
+            cmd.CommandText = "delete from proyectoABD.tbEstudiante where @carnet=carnet";
+            string connectionString = ConfigurationManager.ConnectionStrings["db"].ConnectionString;
+
+            MySqlConnection con = new MySqlConnection(connectionString);
+            cmd.Parameters.Add("@carnet", MySqlDbType.String).Value = carnet;
+            cmd.Connection = con;
+            con.Open();
+            try
+            {
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+
+        }
+
 
 
 

@@ -21,7 +21,7 @@ namespace prgProyectoBD
         {
             InitializeComponent();
             lnEstudiantes = new LNEstudiantes();
-           
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -31,7 +31,8 @@ namespace prgProyectoBD
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            
+            frmEstudiantes frmEst = new frmEstudiantes(1, lnEstudiantes, this.dgvEstudiantes);
+            frmEst.Show();
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
@@ -41,13 +42,17 @@ namespace prgProyectoBD
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
-            frmEstudiantes frmEst = new frmEstudiantes(1, lnEstudiantes, this.dgvEstudiantes);
+            frmEstudiantes frmEst = new frmEstudiantes(2, lnEstudiantes, this.dgvEstudiantes);
             frmEst.Show();
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-
+            if (MessageBox.Show("¿Esta seguro de eliminar al estudiante: \"" + dgvEstudiantes.CurrentRow.Cells[1].Value.ToString() + "\"?", "AVISO", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
+            {
+                lnEstudiantes.eliminarEstudiante(Convert.ToString(dgvEstudiantes.CurrentRow.Cells[0].Value.ToString()));
+                dgvEstudiantes.DataSource = lnEstudiantes.listaEstudiantes();
+            }
         }
     }
 }
