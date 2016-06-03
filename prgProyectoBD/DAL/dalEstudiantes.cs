@@ -36,9 +36,9 @@ namespace DAL
                         estudiante.carnet = reader.GetString(0);
                         estudiante.nombre = reader.GetString(1);
                         estudiante.direccion = reader.GetString(2);
-                        estudiante.fechaNacimiento =DateTime.Parse( reader.GetString(3));
+                        estudiante.fechaNacimiento = DateTime.Parse(reader.GetString(3));
                         estudiante.telefono = reader.GetString(4);
-                        estudiante.email= reader.GetString(5);
+                        estudiante.email = reader.GetString(5);
                         estudiantes.Add(estudiante);
 
                     }
