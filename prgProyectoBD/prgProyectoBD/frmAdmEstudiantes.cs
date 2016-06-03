@@ -31,7 +31,8 @@ namespace prgProyectoBD
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-
+            frmEstudiantes frmEst = new frmEstudiantes();
+            frmEst.Show();
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
