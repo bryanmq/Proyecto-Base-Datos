@@ -15,7 +15,7 @@ namespace prgProyectoBD
 {
     public partial class frmAdmEstudiantes : Form
     {
-        private LNEstudiantes lnEstudiantes;
+        public LNEstudiantes lnEstudiantes;
 
         public frmAdmEstudiantes()
         {
@@ -27,8 +27,6 @@ namespace prgProyectoBD
         private void Form1_Load(object sender, EventArgs e)
         {
             dgvEstudiantes.DataSource = lnEstudiantes.listarEmpleados();
-            Console.WriteLine(lnEstudiantes.listarEmpleados().ElementAt(0).getDireccion());
-           
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)
@@ -50,5 +48,7 @@ namespace prgProyectoBD
         {
 
         }
+
+  
     }
 }

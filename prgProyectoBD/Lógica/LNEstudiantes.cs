@@ -10,7 +10,7 @@ namespace Lógica
 {
     public class LNEstudiantes
     {
-        private DALEstudiantes dalEstudiantes;
+        public DALEstudiantes dalEstudiantes;
 
         public LNEstudiantes()
         {

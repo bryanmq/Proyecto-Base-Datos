@@ -122,7 +122,7 @@
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
   <data name="txtCarnet.Location" type="System.Drawing.Point, System.Drawing">
-    <value>451, 33</value>
+    <value>463, 38</value>
   </data>
   <data name="txtCarnet.Size" type="System.Drawing.Size, System.Drawing">
     <value>126, 26</value>
@@ -141,7 +141,7 @@
     <value>GroupBox</value>
   </data>
   <data name="&gt;&gt;txtCarnet.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -187,7 +187,7 @@
     <value>NoControl</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>384, 39</value>
+    <value>396, 44</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>53, 20</value>
@@ -208,7 +208,19 @@
     <value>GroupBox</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;btnRefresh.Name" xml:space="preserve">
+    <value>btnRefresh</value>
+  </data>
+  <data name="&gt;&gt;btnRefresh.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnRefresh.Parent" xml:space="preserve">
+    <value>GroupBox</value>
+  </data>
+  <data name="&gt;&gt;btnRefresh.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;btnAgregar.Name" xml:space="preserve">
     <value>btnAgregar</value>
@@ -220,7 +232,7 @@
     <value>GroupBox</value>
   </data>
   <data name="&gt;&gt;btnAgregar.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="&gt;&gt;btnBuscar.Name" xml:space="preserve">
     <value>btnBuscar</value>
@@ -232,7 +244,7 @@
     <value>GroupBox</value>
   </data>
   <data name="&gt;&gt;btnBuscar.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="&gt;&gt;btnSalir.Name" xml:space="preserve">
     <value>btnSalir</value>
@@ -244,7 +256,7 @@
     <value>GroupBox</value>
   </data>
   <data name="&gt;&gt;btnSalir.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="&gt;&gt;btnEditar.Name" xml:space="preserve">
     <value>btnEditar</value>
@@ -256,7 +268,7 @@
     <value>GroupBox</value>
   </data>
   <data name="&gt;&gt;btnEditar.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="&gt;&gt;btnEliminar.Name" xml:space="preserve">
     <value>btnEliminar</value>
@@ -268,19 +280,22 @@
     <value>GroupBox</value>
   </data>
   <data name="&gt;&gt;btnEliminar.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
+  </data>
+  <data name="GroupBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 12pt, style=Bold</value>
   </data>
   <data name="GroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 9</value>
+    <value>0, 0</value>
   </data>
   <data name="GroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>648, 100</value>
+    <value>687, 103</value>
   </data>
   <data name="GroupBox.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
   </data>
   <data name="GroupBox.Text" xml:space="preserve">
-    <value>Controles</value>
+    <value>Administración de Estudiantes</value>
   </data>
   <data name="&gt;&gt;GroupBox.Name" xml:space="preserve">
     <value>GroupBox</value>
@@ -294,34 +309,34 @@
   <data name="&gt;&gt;GroupBox.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="btnAgregar.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+  <data name="btnRefresh.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Center</value>
   </data>
-  <data name="btnAgregar.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="btnRefresh.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <data name="btnAgregar.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="btnRefresh.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="btnAgregar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 19</value>
+  <data name="btnRefresh.Location" type="System.Drawing.Point, System.Drawing">
+    <value>225, 27</value>
   </data>
-  <data name="btnAgregar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>71, 57</value>
+  <data name="btnRefresh.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 57</value>
   </data>
-  <data name="btnAgregar.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
+  <data name="btnRefresh.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
   </data>
-  <data name="&gt;&gt;btnAgregar.Name" xml:space="preserve">
-    <value>btnAgregar</value>
+  <data name="&gt;&gt;btnRefresh.Name" xml:space="preserve">
+    <value>btnRefresh</value>
   </data>
-  <data name="&gt;&gt;btnAgregar.Type" xml:space="preserve">
+  <data name="&gt;&gt;btnRefresh.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;btnAgregar.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btnRefresh.Parent" xml:space="preserve">
     <value>GroupBox</value>
   </data>
-  <data name="&gt;&gt;btnAgregar.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btnRefresh.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="btnBuscar.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
@@ -334,7 +349,7 @@
     <value>NoControl</value>
   </data>
   <data name="btnBuscar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>583, 15</value>
+    <value>595, 20</value>
   </data>
   <data name="btnBuscar.Size" type="System.Drawing.Size, System.Drawing">
     <value>59, 64</value>
@@ -352,7 +367,7 @@
     <value>GroupBox</value>
   </data>
   <data name="&gt;&gt;btnBuscar.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="btnSalir.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Center</value>
@@ -364,10 +379,10 @@
     <value>NoControl</value>
   </data>
   <data name="btnSalir.Location" type="System.Drawing.Point, System.Drawing">
-    <value>251, 19</value>
+    <value>300, 25</value>
   </data>
   <data name="btnSalir.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 57</value>
+    <value>56, 57</value>
   </data>
   <data name="btnSalir.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -382,7 +397,7 @@
     <value>GroupBox</value>
   </data>
   <data name="&gt;&gt;btnSalir.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="btnEditar.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Center</value>
@@ -394,10 +409,10 @@
     <value>NoControl</value>
   </data>
   <data name="btnEditar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>91, 19</value>
+    <value>93, 25</value>
   </data>
   <data name="btnEditar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>77, 57</value>
+    <value>64, 57</value>
   </data>
   <data name="btnEditar.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -412,7 +427,7 @@
     <value>GroupBox</value>
   </data>
   <data name="&gt;&gt;btnEditar.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="btnEliminar.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Center</value>
@@ -424,10 +439,10 @@
     <value>NoControl</value>
   </data>
   <data name="btnEliminar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>174, 19</value>
+    <value>163, 25</value>
   </data>
   <data name="btnEliminar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>71, 57</value>
+    <value>56, 57</value>
   </data>
   <data name="btnEliminar.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -442,13 +457,13 @@
     <value>GroupBox</value>
   </data>
   <data name="&gt;&gt;btnEliminar.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="dgvEstudiantes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 148</value>
+    <value>12, 148</value>
   </data>
   <data name="dgvEstudiantes.Size" type="System.Drawing.Size, System.Drawing">
-    <value>650, 179</value>
+    <value>663, 234</value>
   </data>
   <data name="dgvEstudiantes.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -465,6 +480,33 @@
   <data name="&gt;&gt;dgvEstudiantes.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="btnAgregar.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnAgregar.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnAgregar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 27</value>
+  </data>
+  <data name="btnAgregar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 53</value>
+  </data>
+  <data name="btnAgregar.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;btnAgregar.Name" xml:space="preserve">
+    <value>btnAgregar</value>
+  </data>
+  <data name="&gt;&gt;btnAgregar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnAgregar.Parent" xml:space="preserve">
+    <value>GroupBox</value>
+  </data>
+  <data name="&gt;&gt;btnAgregar.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -475,7 +517,7 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>670, 340</value>
+    <value>687, 477</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

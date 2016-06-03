@@ -72,10 +72,20 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="proyectoabdDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>proyectoabdDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="proyectoabdDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>proyectoabdDataSet1.xsd</DependentUpon>
     </Compile>
     <EmbeddedResource Include="frmAdmEstudiantes.resx">
       <DependentUpon>frmAdmEstudiantes.cs</DependentUpon>
@@ -95,11 +105,6 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -135,6 +140,17 @@
     <None Include="proyectoabdDataSet.xss">
       <DependentUpon>proyectoabdDataSet.xsd</DependentUpon>
     </None>
+    <None Include="proyectoabdDataSet1.xsc">
+      <DependentUpon>proyectoabdDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="proyectoabdDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>proyectoabdDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="proyectoabdDataSet1.xss">
+      <DependentUpon>proyectoabdDataSet1.xsd</DependentUpon>
+    </None>
     <None Include="Resources\add.png" />
   </ItemGroup>
   <ItemGroup>
@@ -148,6 +164,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

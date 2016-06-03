@@ -15,8 +15,8 @@ namespace DAL
     {
         public List<Estudiante> listaEstudiantes()
         {
-            List<Estudiante> estudiantes = new List<Entidades.Estudiante>();
-            
+            List<Estudiante> estudiantes = new List<Estudiante>();
+
             MySqlCommand cmd = new MySqlCommand();
             cmd.CommandText = "Select carnet, nombre, direccion, fechaNacimiento, telefono, email from proyectoABD.tbEstudiante";
             string connectionString = ConfigurationManager.ConnectionStrings["db"].ConnectionString;
@@ -31,15 +31,15 @@ namespace DAL
                 {
                     try
                     {
-                        Estudiante empleado = new Estudiante();
+                        Estudiante estudiante = new Estudiante();
 
-                        empleado.setCarnet(reader.GetString(0));
-                        empleado.setNombre(reader.GetString(1));
-                        empleado.setDireccion(reader.GetString(2));
-                        empleado.setFechaNac(reader.GetString(3));
-                        empleado.setTelefono(reader.GetString(4));
-                        empleado.setEmail(reader.GetString(5));
-                        estudiantes.Add(empleado);
+                        estudiante.carnet = reader.GetString(0);
+                        estudiante.nombre = reader.GetString(1);
+                        estudiante.direccion = reader.GetString(2);
+                        estudiante.fechaNacimiento =DateTime.Parse( reader.GetString(3));
+                        estudiante.telefono = reader.GetString(4);
+                        estudiante.email= reader.GetString(5);
+                        estudiantes.Add(estudiante);
 
                     }
                     catch (Exception ex)
@@ -49,7 +49,7 @@ namespace DAL
                 }
                 con.Close();
             }
-           
+
             return estudiantes;
         }
         /*

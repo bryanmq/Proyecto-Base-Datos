@@ -9,81 +9,43 @@ namespace Entidades
     public class Estudiante
     {
         #region Atributos
-        private String carnet, nombre, direccion, fechaNacimiento, telefono, email;
+        private String _carnet, _nombre, _direccion, _telefono, _email;
+        private DateTime _fechaNacimiento;
         #endregion
 
-        public Estudiante()
+        public String carnet
         {
-            this.carnet = "";
-            this.nombre = "";
-            this.direccion = "";
-            this.fechaNacimiento = "";
-            this.telefono = "";
-            this.email = "";
-        }
-        public Estudiante(String nombre, String direccion, String fechaNacimiento, String telefono, String email)
-        {
-
+            get { return _carnet; }
+            set { _carnet = value; }
         }
 
-        public void setCarnet(String carnet)
+        public String nombre
         {
-            this.carnet = carnet;
+            get { return _nombre; }
+            set { _nombre = value; }
         }
 
-        public String getCarnet()
+        public String direccion
         {
-            return this.carnet;
+            get { return _direccion; }
+            set { _direccion = value; }
         }
 
-        public void setNombre(String nombre)
+        public DateTime fechaNacimiento
         {
-            this.nombre = nombre;
+            get { return _fechaNacimiento; }
+            set { _fechaNacimiento = value; }
         }
 
-        public String getNombre()
+        public String telefono
         {
-            return this.nombre;
+            get { return _telefono; }
+            set { _telefono = value; }
         }
-
-        public void setDireccion(String direccion)
+        public String email
         {
-            this.direccion = direccion;
-        }
-
-        public String getDireccion()
-        {
-            return this.direccion;
-        }
-
-        public void setFechaNac(String fechaNac)
-        {
-            this.fechaNacimiento = fechaNac;
-        }
-
-        public String getFechaNac()
-        {
-            return this.fechaNacimiento;
-        }
-
-        public void setTelefono(String telefono)
-        {
-            this.telefono = telefono;
-        }
-
-        public String getTelefono()
-        {
-            return this.telefono;
-        }
-
-        public void setEmail(String email)
-        {
-            this.email = email;
-        }
-
-        public String getEmail()
-        {
-            return this.email;
+            get { return _email; }
+            set { _email = value; }
         }
 
     }
