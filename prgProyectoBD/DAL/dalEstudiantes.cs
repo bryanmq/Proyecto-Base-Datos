@@ -52,6 +52,47 @@ namespace DAL
 
             return estudiantes;
         }
+
+        public Estudiante getEstudiante(String carnet)
+        {
+            Estudiante estudiante = new Estudiante();
+
+            MySqlCommand cmd = new MySqlCommand();
+            cmd.CommandText = "Select carnet, nombre, direccion, fechaNacimiento, telefono, email from proyectoABD.tbEstudiante where @carnet=carnet";
+            string connectionString = ConfigurationManager.ConnectionStrings["db"].ConnectionString;
+
+            MySqlConnection con = new MySqlConnection(connectionString);
+            cmd.Parameters.Add("@carnet", MySqlDbType.String).Value = carnet;
+            cmd.Connection = con;
+            con.Open();
+
+            using (MySqlDataReader reader = cmd.ExecuteReader())
+            {
+                while (reader.Read())
+                {
+                    try
+                    {
+                        estudiante.carnet = reader.GetString(0);
+                        estudiante.nombre = reader.GetString(1);
+                        estudiante.direccion = reader.GetString(2);
+                        estudiante.fechaNacimiento = DateTime.Parse(reader.GetString(3));
+                        estudiante.telefono = reader.GetString(4);
+                        estudiante.email = reader.GetString(5);
+                    }
+                    catch (Exception ex)
+                    {
+                        throw ex;
+                    }
+                }
+                con.Close();
+            }
+
+            return estudiante;
+        }
+
+
+
+
         /*
         public List<Entidades.Empleado> listaEmpleados()
         {

@@ -26,13 +26,12 @@ namespace prgProyectoBD
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            dgvEstudiantes.DataSource = lnEstudiantes.listarEmpleados();
+            dgvEstudiantes.DataSource = lnEstudiantes.listaEstudiantes();
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            frmEstudiantes frmEst = new frmEstudiantes();
-            frmEst.Show();
+            
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
@@ -40,16 +39,15 @@ namespace prgProyectoBD
             this.Close();
         }
 
-        private void dgvEstudiantes_DoubleClick(object sender, EventArgs e)
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            frmEstudiantes frmEst = new frmEstudiantes(1, lnEstudiantes, this.dgvEstudiantes);
+            frmEst.Show();
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
         {
 
         }
-
-        private void dgvEstudiantes_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-  
     }
 }

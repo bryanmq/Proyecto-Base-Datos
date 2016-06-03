@@ -17,9 +17,14 @@ namespace Lógica
             dalEstudiantes = new DALEstudiantes();
         }
 
-        public List<Estudiante> listarEmpleados()
+        public List<Estudiante> listaEstudiantes()
         {
             return dalEstudiantes.listaEstudiantes();
+        }
+
+        public Estudiante listaEstudiante(String codigo)
+        {
+            return dalEstudiantes.getEstudiante(codigo);
         }
     }
 }

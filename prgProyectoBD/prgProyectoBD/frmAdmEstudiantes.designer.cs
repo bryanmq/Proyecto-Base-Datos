@@ -123,6 +123,7 @@
             this.btnEditar.Image = global::prgProyectoBD.Properties.Resources.edit;
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.UseVisualStyleBackColor = false;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // btnEliminar
             // 
@@ -132,6 +133,7 @@
             this.btnEliminar.Image = global::prgProyectoBD.Properties.Resources.delete;
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // dgvEstudiantes
             // 
@@ -142,7 +144,6 @@
             this.dgvEstudiantes.Name = "dgvEstudiantes";
             this.dgvEstudiantes.ReadOnly = true;
             this.dgvEstudiantes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvEstudiantes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEstudiantes_CellContentClick);
             // 
             // frmAdmEstudiantes
             // 

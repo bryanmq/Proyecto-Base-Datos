@@ -35,14 +35,14 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.mskTel = new System.Windows.Forms.MaskedTextBox();
+            this.dtpFechaNacimiento = new System.Windows.Forms.DateTimePicker();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.txtDireccion = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.txtCarnet = new System.Windows.Forms.TextBox();
+            this.btnAceptar = new System.Windows.Forms.Button();
+            this.btnCancelar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -108,12 +108,12 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.maskedTextBox1);
-            this.groupBox1.Controls.Add(this.dateTimePicker1);
-            this.groupBox1.Controls.Add(this.textBox6);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.mskTel);
+            this.groupBox1.Controls.Add(this.dtpFechaNacimiento);
+            this.groupBox1.Controls.Add(this.txtEmail);
+            this.groupBox1.Controls.Add(this.txtDireccion);
+            this.groupBox1.Controls.Add(this.txtNombre);
+            this.groupBox1.Controls.Add(this.txtCarnet);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label1);
@@ -126,71 +126,74 @@
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Información del Estudiante:";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // textBox1
+            // mskTel
             // 
-            this.textBox1.Location = new System.Drawing.Point(160, 23);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(107, 20);
-            this.textBox1.TabIndex = 6;
+            this.mskTel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mskTel.Location = new System.Drawing.Point(160, 188);
+            this.mskTel.Mask = "0000-0000";
+            this.mskTel.Name = "mskTel";
+            this.mskTel.Size = new System.Drawing.Size(74, 20);
+            this.mskTel.TabIndex = 13;
             // 
-            // textBox2
+            // dtpFechaNacimiento
             // 
-            this.textBox2.Location = new System.Drawing.Point(160, 53);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(260, 20);
-            this.textBox2.TabIndex = 7;
+            this.dtpFechaNacimiento.Location = new System.Drawing.Point(160, 154);
+            this.dtpFechaNacimiento.Name = "dtpFechaNacimiento";
+            this.dtpFechaNacimiento.Size = new System.Drawing.Size(200, 20);
+            this.dtpFechaNacimiento.TabIndex = 12;
             // 
-            // textBox3
+            // txtEmail
             // 
-            this.textBox3.Location = new System.Drawing.Point(160, 84);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(260, 57);
-            this.textBox3.TabIndex = 8;
+            this.txtEmail.Location = new System.Drawing.Point(160, 218);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(152, 20);
+            this.txtEmail.TabIndex = 11;
             // 
-            // dateTimePicker1
+            // txtDireccion
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(160, 154);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 12;
+            this.txtDireccion.Location = new System.Drawing.Point(160, 84);
+            this.txtDireccion.Multiline = true;
+            this.txtDireccion.Name = "txtDireccion";
+            this.txtDireccion.Size = new System.Drawing.Size(260, 57);
+            this.txtDireccion.TabIndex = 8;
             // 
-            // maskedTextBox1
+            // txtNombre
             // 
-            this.maskedTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox1.Location = new System.Drawing.Point(160, 188);
-            this.maskedTextBox1.Mask = "0000-0000";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(74, 22);
-            this.maskedTextBox1.TabIndex = 13;
+            this.txtNombre.Location = new System.Drawing.Point(160, 53);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(260, 20);
+            this.txtNombre.TabIndex = 7;
             // 
-            // textBox6
+            // txtCarnet
             // 
-            this.textBox6.Location = new System.Drawing.Point(160, 218);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(152, 20);
-            this.textBox6.TabIndex = 11;
+            this.txtCarnet.Enabled = false;
+            this.txtCarnet.Location = new System.Drawing.Point(160, 23);
+            this.txtCarnet.Name = "txtCarnet";
+            this.txtCarnet.Size = new System.Drawing.Size(107, 20);
+            this.txtCarnet.TabIndex = 6;
             // 
-            // button1
+            // btnAceptar
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(95, 263);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(92, 32);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Aceptar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnAceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAceptar.Location = new System.Drawing.Point(95, 263);
+            this.btnAceptar.Name = "btnAceptar";
+            this.btnAceptar.Size = new System.Drawing.Size(92, 32);
+            this.btnAceptar.TabIndex = 7;
+            this.btnAceptar.Text = "Aceptar";
+            this.btnAceptar.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnCancelar
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(264, 262);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(102, 35);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "Cancelar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelar.Location = new System.Drawing.Point(264, 262);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(102, 35);
+            this.btnCancelar.TabIndex = 8;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // frmEstudiantes
             // 
@@ -198,13 +201,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(480, 307);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnCancelar);
+            this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmEstudiantes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "frmEstudiantes";
+            this.Load += new System.EventHandler(this.frmEstudiantes_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -220,13 +224,13 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.DateTimePicker dtpFechaNacimiento;
+        private System.Windows.Forms.TextBox txtDireccion;
+        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.TextBox txtCarnet;
+        private System.Windows.Forms.MaskedTextBox mskTel;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.Button btnAceptar;
+        private System.Windows.Forms.Button btnCancelar;
     }
 }
