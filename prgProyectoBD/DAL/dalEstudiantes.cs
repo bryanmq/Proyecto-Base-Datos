@@ -8,7 +8,7 @@ using MySql.Data.Types;
 using System.Data;
 namespace DAL
 {
-    public class dalEstudiantes
+    public class DALEstudiantes
     {
     }
 }
