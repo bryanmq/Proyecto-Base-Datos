@@ -62,9 +62,9 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(31, 55);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(62, 15);
+            this.label2.Size = new System.Drawing.Size(127, 15);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Nombre:";
+            this.label2.Text = "Nombre Completo:";
             // 
             // label3
             // 
@@ -199,7 +199,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackColor = System.Drawing.Color.MediumAquamarine;
             this.ClientSize = new System.Drawing.Size(480, 307);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnAceptar);
