@@ -147,7 +147,7 @@
             // 
             this.txtEmail.Location = new System.Drawing.Point(160, 218);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(152, 20);
+            this.txtEmail.Size = new System.Drawing.Size(127, 20);
             this.txtEmail.TabIndex = 11;
             // 
             // txtDireccion
