@@ -1,4 +1,4 @@
-﻿namespace Practica_1
+﻿namespace prgProyectoBD
 {
     partial class frmAdmEstudiantes
     {
@@ -33,12 +33,12 @@
             this.txtCarnet = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.btnSalir = new System.Windows.Forms.Button();
-            this.btnEliminar = new System.Windows.Forms.Button();
-            this.btnEditar = new System.Windows.Forms.Button();
+            this.GroupBox = new System.Windows.Forms.GroupBox();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.btnBuscar = new System.Windows.Forms.Button();
-            this.GroupBox = new System.Windows.Forms.GroupBox();
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.btnEditar = new System.Windows.Forms.Button();
+            this.btnEliminar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEstudiantes)).BeginInit();
             this.GroupBox.SuspendLayout();
             this.SuspendLayout();
@@ -70,51 +70,6 @@
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label3.Name = "label3";
             // 
-            // btnSalir
-            // 
-            this.btnSalir.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.btnSalir, "btnSalir");
-            this.btnSalir.FlatAppearance.BorderSize = 0;
-            this.btnSalir.Image = global::prgProyectoBD.Properties.Resources.exit;
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.UseVisualStyleBackColor = false;
-            // 
-            // btnEliminar
-            // 
-            this.btnEliminar.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.btnEliminar, "btnEliminar");
-            this.btnEliminar.FlatAppearance.BorderSize = 0;
-            this.btnEliminar.Image = global::prgProyectoBD.Properties.Resources.delete;
-            this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.UseVisualStyleBackColor = false;
-            // 
-            // btnEditar
-            // 
-            this.btnEditar.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.btnEditar, "btnEditar");
-            this.btnEditar.FlatAppearance.BorderSize = 0;
-            this.btnEditar.Image = global::prgProyectoBD.Properties.Resources.edit;
-            this.btnEditar.Name = "btnEditar";
-            this.btnEditar.UseVisualStyleBackColor = false;
-            // 
-            // btnAgregar
-            // 
-            this.btnAgregar.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.btnAgregar, "btnAgregar");
-            this.btnAgregar.FlatAppearance.BorderSize = 0;
-            this.btnAgregar.Image = global::prgProyectoBD.Properties.Resources.add;
-            this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.UseVisualStyleBackColor = false;
-            // 
-            // btnBuscar
-            // 
-            this.btnBuscar.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.btnBuscar, "btnBuscar");
-            this.btnBuscar.FlatAppearance.BorderSize = 0;
-            this.btnBuscar.Image = global::prgProyectoBD.Properties.Resources.search;
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.UseVisualStyleBackColor = false;
-            // 
             // GroupBox
             // 
             this.GroupBox.Controls.Add(this.btnAgregar);
@@ -127,6 +82,53 @@
             resources.ApplyResources(this.GroupBox, "GroupBox");
             this.GroupBox.Name = "GroupBox";
             this.GroupBox.TabStop = false;
+            // 
+            // btnAgregar
+            // 
+            this.btnAgregar.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.btnAgregar, "btnAgregar");
+            this.btnAgregar.FlatAppearance.BorderSize = 0;
+            this.btnAgregar.Image = global::prgProyectoBD.Properties.Resources.add;
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.UseVisualStyleBackColor = false;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.btnBuscar, "btnBuscar");
+            this.btnBuscar.FlatAppearance.BorderSize = 0;
+            this.btnBuscar.Image = global::prgProyectoBD.Properties.Resources.search;
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.UseVisualStyleBackColor = false;
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.btnSalir, "btnSalir");
+            this.btnSalir.FlatAppearance.BorderSize = 0;
+            this.btnSalir.Image = global::prgProyectoBD.Properties.Resources.exit;
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.UseVisualStyleBackColor = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
+            // btnEditar
+            // 
+            this.btnEditar.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.btnEditar, "btnEditar");
+            this.btnEditar.FlatAppearance.BorderSize = 0;
+            this.btnEditar.Image = global::prgProyectoBD.Properties.Resources.edit;
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.UseVisualStyleBackColor = false;
+            // 
+            // btnEliminar
+            // 
+            this.btnEliminar.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.btnEliminar, "btnEliminar");
+            this.btnEliminar.FlatAppearance.BorderSize = 0;
+            this.btnEliminar.Image = global::prgProyectoBD.Properties.Resources.delete;
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.UseVisualStyleBackColor = false;
             // 
             // frmAdmEstudiantes
             // 

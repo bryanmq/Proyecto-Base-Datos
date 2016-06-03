@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 
-namespace Practica_1
+namespace prgProyectoBD
 {
     public partial class frmAdmEstudiantes : Form
     {
@@ -25,5 +25,14 @@ namespace Practica_1
          
         }
 
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

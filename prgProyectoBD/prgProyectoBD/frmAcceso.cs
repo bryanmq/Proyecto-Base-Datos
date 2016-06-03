@@ -12,6 +12,7 @@ namespace prgProyectoBD
 {
     public partial class frmAcceso : Form
     {
+        private frmAdmEstudiantes frmAdmEst;
         public frmAcceso()
         {
             InitializeComponent();
@@ -25,8 +26,14 @@ namespace prgProyectoBD
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Vamos compañer@s", "Bases de datos",MessageBoxButtons.OKCancel, MessageBoxIcon.Asterisk);
+            frmAdmEst = new frmAdmEstudiantes();
+            frmAdmEst.Show();
+            
+        }
 
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
