@@ -147,7 +147,7 @@
             // 
             this.txtEmail.Location = new System.Drawing.Point(160, 218);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(127, 20);
+            this.txtEmail.Size = new System.Drawing.Size(177, 20);
             this.txtEmail.TabIndex = 11;
             // 
             // txtDireccion
@@ -175,25 +175,25 @@
             // 
             // btnAceptar
             // 
-            this.btnAceptar.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.btnAceptar.BackColor = System.Drawing.Color.Gray;
             this.btnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAceptar.Location = new System.Drawing.Point(95, 263);
+            this.btnAceptar.Location = new System.Drawing.Point(78, 263);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(92, 32);
             this.btnAceptar.TabIndex = 7;
-            this.btnAceptar.Text = "Aceptar";
+            this.btnAceptar.Text = "Agregar";
             this.btnAceptar.UseVisualStyleBackColor = false;
             this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
             // btnCancelar
             // 
-            this.btnCancelar.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.btnCancelar.BackColor = System.Drawing.Color.Gray;
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Location = new System.Drawing.Point(296, 262);
+            this.btnCancelar.Location = new System.Drawing.Point(304, 263);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(102, 35);
+            this.btnCancelar.Size = new System.Drawing.Size(102, 32);
             this.btnCancelar.TabIndex = 8;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
