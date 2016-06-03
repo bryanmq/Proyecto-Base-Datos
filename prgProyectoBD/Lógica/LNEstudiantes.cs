@@ -17,7 +17,7 @@ namespace Lógica
             dalEstudiantes = new DALEstudiantes();
         }
 
-        public List<Entidades.Estudiante> listarEmpleados()
+        public List<Estudiante> listarEmpleados()
         {
             return dalEstudiantes.listaEstudiantes();
         }

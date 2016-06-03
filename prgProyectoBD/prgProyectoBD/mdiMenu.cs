@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Lógica;
+using Entidades;
 
 namespace prgProyectoBD
 {
@@ -14,9 +16,11 @@ namespace prgProyectoBD
     {
         private frmAdmEstudiantes frmAdmEst;
 
+
         public mdiMenu()
         {
             InitializeComponent();
+   
         }
 
         private void mdiMenu_Load(object sender, EventArgs e)

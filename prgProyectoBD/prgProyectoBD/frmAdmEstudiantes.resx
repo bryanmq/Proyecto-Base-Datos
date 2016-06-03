@@ -384,35 +384,11 @@
   <data name="&gt;&gt;GroupBox.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="carnetDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>carnet</value>
-  </data>
-  <data name="nombreDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>nombre</value>
-  </data>
-  <data name="direccionDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>direccion</value>
-  </data>
-  <data name="fechaNacimientoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>fechaNacimiento</value>
-  </data>
-  <data name="telefonoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>telefono</value>
-  </data>
-  <data name="emailDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>email</value>
-  </data>
-  <metadata name="tbestudianteBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>180, 17</value>
-  </metadata>
-  <metadata name="proyectoabdDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <data name="dgvEstudiantes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 148</value>
+    <value>17, 161</value>
   </data>
   <data name="dgvEstudiantes.Size" type="System.Drawing.Size, System.Drawing">
-    <value>642, 180</value>
+    <value>637, 150</value>
   </data>
   <data name="dgvEstudiantes.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -429,9 +405,6 @@
   <data name="&gt;&gt;dgvEstudiantes.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <metadata name="tbestudianteTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>379, 17</value>
-  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -3282,60 +3255,6 @@
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Administración de Estudiantes</value>
-  </data>
-  <data name="&gt;&gt;proyectoabdDataSet.Name" xml:space="preserve">
-    <value>proyectoabdDataSet</value>
-  </data>
-  <data name="&gt;&gt;proyectoabdDataSet.Type" xml:space="preserve">
-    <value>prgProyectoBD.proyectoabdDataSet, proyectoabdDataSet.Designer.cs.dll, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;tbestudianteBindingSource.Name" xml:space="preserve">
-    <value>tbestudianteBindingSource</value>
-  </data>
-  <data name="&gt;&gt;tbestudianteBindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tbestudianteTableAdapter.Name" xml:space="preserve">
-    <value>tbestudianteTableAdapter</value>
-  </data>
-  <data name="&gt;&gt;tbestudianteTableAdapter.Type" xml:space="preserve">
-    <value>prgProyectoBD.proyectoabdDataSetTableAdapters.tbestudianteTableAdapter, proyectoabdDataSet.Designer.cs.dll, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;carnetDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>carnetDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;carnetDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;nombreDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>nombreDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;nombreDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;direccionDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>direccionDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;direccionDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;fechaNacimientoDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>fechaNacimientoDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;fechaNacimientoDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;telefonoDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>telefonoDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;telefonoDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;emailDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>emailDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;emailDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>frmAdmEstudiantes</value>

@@ -13,12 +13,12 @@ namespace DAL
 {
     public class DALEstudiantes
     {
-        public List<Entidades.Estudiante> listaEstudiantes()
+        public List<Estudiante> listaEstudiantes()
         {
-            List<Entidades.Estudiante> estudiantes = new List<Entidades.Estudiante>();
+            List<Estudiante> estudiantes = new List<Entidades.Estudiante>();
             
             MySqlCommand cmd = new MySqlCommand();
-            cmd.CommandText = "Select carnet, nombre, direccion, fechaNacimiento, telefono, email from proyectoabd.tbestudiante";
+            cmd.CommandText = "Select carnet, nombre, direccion, fechaNacimiento, telefono, email from proyectoABD.tbEstudiante";
             string connectionString = ConfigurationManager.ConnectionStrings["db"].ConnectionString;
 
             MySqlConnection con = new MySqlConnection(connectionString);
