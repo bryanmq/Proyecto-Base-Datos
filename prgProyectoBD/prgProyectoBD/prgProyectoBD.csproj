@@ -51,7 +51,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="frmAdmEstudiantes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +62,12 @@
     </Compile>
     <Compile Include="frmAcceso.Designer.cs">
       <DependentUpon>frmAcceso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEstudiantes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEstudiantes.Designer.cs">
+      <DependentUpon>frmEstudiantes.cs</DependentUpon>
     </Compile>
     <Compile Include="mdiMenu.cs">
       <SubType>Form</SubType>
@@ -92,6 +97,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmAcceso.resx">
       <DependentUpon>frmAcceso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEstudiantes.resx">
+      <DependentUpon>frmEstudiantes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="mdiMenu.resx">
       <DependentUpon>mdiMenu.cs</DependentUpon>
