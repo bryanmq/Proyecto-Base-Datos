@@ -39,7 +39,6 @@ namespace DAL
                         empleado.setFechaNac(reader.GetString(3));
                         empleado.setTelefono(reader.GetString(4));
                         empleado.setEmail(reader.GetString(5));
-                        Console.WriteLine(empleado.getNombre());
                         estudiantes.Add(empleado);
 
                     }

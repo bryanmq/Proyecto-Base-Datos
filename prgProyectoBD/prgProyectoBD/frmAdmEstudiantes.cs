@@ -27,6 +27,7 @@ namespace prgProyectoBD
         private void Form1_Load(object sender, EventArgs e)
         {
             dgvEstudiantes.DataSource = lnEstudiantes.listarEmpleados();
+            Console.WriteLine(lnEstudiantes.listarEmpleados().ElementAt(0).getDireccion());
            
         }
 
@@ -40,5 +41,14 @@ namespace prgProyectoBD
             this.Close();
         }
 
+        private void dgvEstudiantes_DoubleClick(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvEstudiantes_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
