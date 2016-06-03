@@ -30,6 +30,7 @@
         {
             this.menuStrip = new System.Windows.Forms.MenuStrip();
             this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.administrarEstudiantesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -45,9 +46,18 @@
             // 
             // archivoToolStripMenuItem
             // 
+            this.archivoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.administrarEstudiantesToolStripMenuItem});
             this.archivoToolStripMenuItem.Name = "archivoToolStripMenuItem";
             this.archivoToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
             this.archivoToolStripMenuItem.Text = "Archivo";
+            // 
+            // administrarEstudiantesToolStripMenuItem
+            // 
+            this.administrarEstudiantesToolStripMenuItem.Name = "administrarEstudiantesToolStripMenuItem";
+            this.administrarEstudiantesToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
+            this.administrarEstudiantesToolStripMenuItem.Text = "Administrar Estudiantes";
+            this.administrarEstudiantesToolStripMenuItem.Click += new System.EventHandler(this.administrarEstudiantesToolStripMenuItem_Click);
             // 
             // mdiMenu
             // 
@@ -71,6 +81,7 @@
 
         private System.Windows.Forms.MenuStrip menuStrip;
         private System.Windows.Forms.ToolStripMenuItem archivoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem administrarEstudiantesToolStripMenuItem;
     }
 }
 

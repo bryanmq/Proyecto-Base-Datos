@@ -12,7 +12,7 @@ namespace prgProyectoBD
 {
     public partial class frmAcceso : Form
     {
-        private frmAdmEstudiantes frmAdmEst;
+        private mdiMenu mdi;
         public frmAcceso()
         {
             InitializeComponent();
@@ -26,8 +26,8 @@ namespace prgProyectoBD
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            frmAdmEst = new frmAdmEstudiantes();
-            frmAdmEst.Show();
+            mdi = new mdiMenu();
+            mdi.Show();
             
         }
 
