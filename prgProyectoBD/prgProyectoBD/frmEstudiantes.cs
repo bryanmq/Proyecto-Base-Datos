@@ -48,5 +48,13 @@ namespace prgProyectoBD
         {
             this.Dispose();
         }
+
+        private void btnAceptar_Click(object sender, EventArgs e)
+        {
+            if (index == 1)
+            {
+
+            }
+        }
     }
 }

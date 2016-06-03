@@ -210,6 +210,105 @@
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="&gt;&gt;btnRefresh.Name" xml:space="preserve">
+    <value>btnRefresh</value>
+  </data>
+  <data name="&gt;&gt;btnRefresh.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnRefresh.Parent" xml:space="preserve">
+    <value>GroupBox</value>
+  </data>
+  <data name="&gt;&gt;btnRefresh.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btnAgregar.Name" xml:space="preserve">
+    <value>btnAgregar</value>
+  </data>
+  <data name="&gt;&gt;btnAgregar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnAgregar.Parent" xml:space="preserve">
+    <value>GroupBox</value>
+  </data>
+  <data name="&gt;&gt;btnAgregar.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;btnBuscar.Name" xml:space="preserve">
+    <value>btnBuscar</value>
+  </data>
+  <data name="&gt;&gt;btnBuscar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnBuscar.Parent" xml:space="preserve">
+    <value>GroupBox</value>
+  </data>
+  <data name="&gt;&gt;btnBuscar.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;btnSalir.Name" xml:space="preserve">
+    <value>btnSalir</value>
+  </data>
+  <data name="&gt;&gt;btnSalir.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnSalir.Parent" xml:space="preserve">
+    <value>GroupBox</value>
+  </data>
+  <data name="&gt;&gt;btnSalir.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;btnEditar.Name" xml:space="preserve">
+    <value>btnEditar</value>
+  </data>
+  <data name="&gt;&gt;btnEditar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnEditar.Parent" xml:space="preserve">
+    <value>GroupBox</value>
+  </data>
+  <data name="&gt;&gt;btnEditar.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;btnEliminar.Name" xml:space="preserve">
+    <value>btnEliminar</value>
+  </data>
+  <data name="&gt;&gt;btnEliminar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnEliminar.Parent" xml:space="preserve">
+    <value>GroupBox</value>
+  </data>
+  <data name="&gt;&gt;btnEliminar.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="GroupBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 12pt, style=Bold</value>
+  </data>
+  <data name="GroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="GroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>687, 103</value>
+  </data>
+  <data name="GroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="GroupBox.Text" xml:space="preserve">
+    <value>Administración de Estudiantes</value>
+  </data>
+  <data name="&gt;&gt;GroupBox.Name" xml:space="preserve">
+    <value>GroupBox</value>
+  </data>
+  <data name="&gt;&gt;GroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GroupBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;GroupBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="btnRefresh.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Center</value>
   </data>
@@ -386,33 +485,6 @@
   </data>
   <data name="&gt;&gt;btnEliminar.ZOrder" xml:space="preserve">
     <value>7</value>
-  </data>
-  <data name="GroupBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 12pt, style=Bold</value>
-  </data>
-  <data name="GroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="GroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>687, 103</value>
-  </data>
-  <data name="GroupBox.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="GroupBox.Text" xml:space="preserve">
-    <value>Administración de Estudiantes</value>
-  </data>
-  <data name="&gt;&gt;GroupBox.Name" xml:space="preserve">
-    <value>GroupBox</value>
-  </data>
-  <data name="&gt;&gt;GroupBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;GroupBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;GroupBox.ZOrder" xml:space="preserve">
-    <value>1</value>
   </data>
   <data name="dgvEstudiantes.Location" type="System.Drawing.Point, System.Drawing">
     <value>23, 158</value>

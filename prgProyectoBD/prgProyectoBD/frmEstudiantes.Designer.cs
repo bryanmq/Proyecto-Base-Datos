@@ -126,7 +126,6 @@
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Información del Estudiante:";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // mskTel
             // 
@@ -185,6 +184,7 @@
             this.btnAceptar.TabIndex = 7;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = false;
+            this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
             // btnCancelar
             // 
