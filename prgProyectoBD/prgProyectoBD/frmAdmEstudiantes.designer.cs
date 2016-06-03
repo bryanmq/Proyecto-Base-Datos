@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAdmEstudiantes));
-            this.dgvEstudiantes = new System.Windows.Forms.DataGridView();
             this.txtCarnet = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -39,19 +39,21 @@
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvEstudiantes)).BeginInit();
+            this.dgvEstudiantes = new System.Windows.Forms.DataGridView();
+            this.proyectoabdDataSet = new prgProyectoBD.proyectoabdDataSet();
+            this.tbestudianteBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tbestudianteTableAdapter = new prgProyectoBD.proyectoabdDataSetTableAdapters.tbestudianteTableAdapter();
+            this.carnetDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.direccionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fechaNacimientoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.telefonoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.GroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEstudiantes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proyectoabdDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbestudianteBindingSource)).BeginInit();
             this.SuspendLayout();
-            // 
-            // dgvEstudiantes
-            // 
-            this.dgvEstudiantes.BackgroundColor = System.Drawing.Color.MediumSpringGreen;
-            this.dgvEstudiantes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvEstudiantes.GridColor = System.Drawing.SystemColors.Control;
-            resources.ApplyResources(this.dgvEstudiantes, "dgvEstudiantes");
-            this.dgvEstudiantes.Name = "dgvEstudiantes";
-            this.dgvEstudiantes.ReadOnly = true;
-            this.dgvEstudiantes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             // 
             // txtCarnet
             // 
@@ -130,6 +132,73 @@
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.UseVisualStyleBackColor = false;
             // 
+            // dgvEstudiantes
+            // 
+            this.dgvEstudiantes.AutoGenerateColumns = false;
+            this.dgvEstudiantes.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
+            this.dgvEstudiantes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvEstudiantes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.carnetDataGridViewTextBoxColumn,
+            this.nombreDataGridViewTextBoxColumn,
+            this.direccionDataGridViewTextBoxColumn,
+            this.fechaNacimientoDataGridViewTextBoxColumn,
+            this.telefonoDataGridViewTextBoxColumn,
+            this.emailDataGridViewTextBoxColumn});
+            this.dgvEstudiantes.DataSource = this.tbestudianteBindingSource;
+            resources.ApplyResources(this.dgvEstudiantes, "dgvEstudiantes");
+            this.dgvEstudiantes.Name = "dgvEstudiantes";
+            this.dgvEstudiantes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEstudiantes_CellContentClick);
+            // 
+            // proyectoabdDataSet
+            // 
+            this.proyectoabdDataSet.DataSetName = "proyectoabdDataSet";
+            this.proyectoabdDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tbestudianteBindingSource
+            // 
+            this.tbestudianteBindingSource.DataMember = "tbestudiante";
+            this.tbestudianteBindingSource.DataSource = this.proyectoabdDataSet;
+            // 
+            // tbestudianteTableAdapter
+            // 
+            this.tbestudianteTableAdapter.ClearBeforeFill = true;
+            // 
+            // carnetDataGridViewTextBoxColumn
+            // 
+            this.carnetDataGridViewTextBoxColumn.DataPropertyName = "carnet";
+            resources.ApplyResources(this.carnetDataGridViewTextBoxColumn, "carnetDataGridViewTextBoxColumn");
+            this.carnetDataGridViewTextBoxColumn.Name = "carnetDataGridViewTextBoxColumn";
+            // 
+            // nombreDataGridViewTextBoxColumn
+            // 
+            this.nombreDataGridViewTextBoxColumn.DataPropertyName = "nombre";
+            resources.ApplyResources(this.nombreDataGridViewTextBoxColumn, "nombreDataGridViewTextBoxColumn");
+            this.nombreDataGridViewTextBoxColumn.Name = "nombreDataGridViewTextBoxColumn";
+            // 
+            // direccionDataGridViewTextBoxColumn
+            // 
+            this.direccionDataGridViewTextBoxColumn.DataPropertyName = "direccion";
+            resources.ApplyResources(this.direccionDataGridViewTextBoxColumn, "direccionDataGridViewTextBoxColumn");
+            this.direccionDataGridViewTextBoxColumn.Name = "direccionDataGridViewTextBoxColumn";
+            // 
+            // fechaNacimientoDataGridViewTextBoxColumn
+            // 
+            this.fechaNacimientoDataGridViewTextBoxColumn.DataPropertyName = "fechaNacimiento";
+            resources.ApplyResources(this.fechaNacimientoDataGridViewTextBoxColumn, "fechaNacimientoDataGridViewTextBoxColumn");
+            this.fechaNacimientoDataGridViewTextBoxColumn.Name = "fechaNacimientoDataGridViewTextBoxColumn";
+            // 
+            // telefonoDataGridViewTextBoxColumn
+            // 
+            this.telefonoDataGridViewTextBoxColumn.DataPropertyName = "telefono";
+            resources.ApplyResources(this.telefonoDataGridViewTextBoxColumn, "telefonoDataGridViewTextBoxColumn");
+            this.telefonoDataGridViewTextBoxColumn.Name = "telefonoDataGridViewTextBoxColumn";
+            // 
+            // emailDataGridViewTextBoxColumn
+            // 
+            this.emailDataGridViewTextBoxColumn.DataPropertyName = "email";
+            resources.ApplyResources(this.emailDataGridViewTextBoxColumn, "emailDataGridViewTextBoxColumn");
+            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
+            // 
             // frmAdmEstudiantes
             // 
             this.AllowDrop = true;
@@ -137,23 +206,23 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.ControlBox = false;
+            this.Controls.Add(this.dgvEstudiantes);
             this.Controls.Add(this.GroupBox);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dgvEstudiantes);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmAdmEstudiantes";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvEstudiantes)).EndInit();
             this.GroupBox.ResumeLayout(false);
             this.GroupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEstudiantes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proyectoabdDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbestudianteBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dgvEstudiantes;
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.TextBox txtCarnet;
         private System.Windows.Forms.Label label1;
@@ -163,6 +232,16 @@
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.GroupBox GroupBox;
+        private System.Windows.Forms.DataGridView dgvEstudiantes;
+        private proyectoabdDataSet proyectoabdDataSet;
+        private System.Windows.Forms.BindingSource tbestudianteBindingSource;
+        private proyectoabdDataSetTableAdapters.tbestudianteTableAdapter tbestudianteTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn carnetDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nombreDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn direccionDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fechaNacimientoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn telefonoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
     }
 }
 

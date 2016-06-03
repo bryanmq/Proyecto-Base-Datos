@@ -66,7 +66,7 @@ namespace Entidades
             return this.fechaNacimiento;
         }
 
-        public void seTelefono(String telefono)
+        public void setTelefono(String telefono)
         {
             this.telefono = telefono;
         }

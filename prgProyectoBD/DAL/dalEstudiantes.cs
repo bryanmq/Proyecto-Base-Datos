@@ -3,14 +3,56 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Configuration;
 using MySql.Data.MySqlClient;
 using MySql.Data.Types;
 using System.Data;
+using Entidades;
+
 namespace DAL
 {
     public class DALEstudiantes
     {
-     
+        public List<Entidades.Estudiante> listaEstudiantes()
+        {
+            List<Entidades.Estudiante> estudiantes = new List<Entidades.Estudiante>();
+            
+            MySqlCommand cmd = new MySqlCommand();
+            cmd.CommandText = "Select carnet, nombre, direccion, fechaNacimiento, telefono, email from proyectoabd.tbestudiante";
+            string connectionString = ConfigurationManager.ConnectionStrings["db"].ConnectionString;
+
+            MySqlConnection con = new MySqlConnection(connectionString);
+            cmd.Connection = con;
+            con.Open();
+
+            using (MySqlDataReader reader = cmd.ExecuteReader())
+            {
+                while (reader.Read())
+                {
+                    try
+                    {
+                        Estudiante empleado = new Estudiante();
+
+                        empleado.setCarnet(reader.GetString(0));
+                        empleado.setNombre(reader.GetString(1));
+                        empleado.setDireccion(reader.GetString(2));
+                        empleado.setFechaNac(reader.GetString(3));
+                        empleado.setTelefono(reader.GetString(4));
+                        empleado.setEmail(reader.GetString(5));
+                        Console.WriteLine(empleado.getNombre());
+                        estudiantes.Add(empleado);
+
+                    }
+                    catch (Exception ex)
+                    {
+                        throw ex;
+                    }
+                }
+                con.Close();
+            }
+           
+            return estudiantes;
+        }
         /*
         public List<Entidades.Empleado> listaEmpleados()
         {
