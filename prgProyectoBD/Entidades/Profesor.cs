@@ -31,7 +31,7 @@ namespace Entidades
         //***************************************************************************************************
         public int idProfesor
         {
-            get { return idProfesor; }
+            get { return _idProfesor; }
             set { _idProfesor = value; }
         }
 
