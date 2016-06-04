@@ -22,11 +22,7 @@ namespace prgProyectoBD
  
         }
 
-        private void frmAcceso_Load(object sender, EventArgs e)
-        {
-
-
-        }
+        
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
@@ -39,5 +35,7 @@ namespace prgProyectoBD
         {
             Application.Exit();
         }
+
+        
     }
 }
