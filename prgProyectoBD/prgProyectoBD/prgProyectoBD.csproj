@@ -81,6 +81,12 @@
     <Compile Include="frmProfesores.Designer.cs">
       <DependentUpon>frmProfesores.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmRolesAndPrivileges.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRolesAndPrivileges.Designer.cs">
+      <DependentUpon>frmRolesAndPrivileges.cs</DependentUpon>
+    </Compile>
     <Compile Include="mdiMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,6 +124,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmProfesores.resx">
       <DependentUpon>frmProfesores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRolesAndPrivileges.resx">
+      <DependentUpon>frmRolesAndPrivileges.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="mdiMenu.resx">
       <DependentUpon>mdiMenu.cs</DependentUpon>
@@ -196,6 +205,36 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\entersistem1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13133-NP3WT2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\locked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\insert.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hand-cursor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eraser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

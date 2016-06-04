@@ -33,13 +33,16 @@
             this.administrarEstudiantesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.administrarProfesoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.seguridadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.creaciónRolesYPrivilegiosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip
             // 
             this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.archivoToolStripMenuItem});
+            this.archivoToolStripMenuItem,
+            this.seguridadToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
             this.menuStrip.Size = new System.Drawing.Size(632, 24);
@@ -75,6 +78,21 @@
             this.administrarProfesoresToolStripMenuItem.Text = "Administrar Profesores";
             this.administrarProfesoresToolStripMenuItem.Click += new System.EventHandler(this.administrarProfesoresToolStripMenuItem_Click);
             // 
+            // seguridadToolStripMenuItem
+            // 
+            this.seguridadToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.creaciónRolesYPrivilegiosToolStripMenuItem});
+            this.seguridadToolStripMenuItem.Name = "seguridadToolStripMenuItem";
+            this.seguridadToolStripMenuItem.Size = new System.Drawing.Size(72, 20);
+            this.seguridadToolStripMenuItem.Text = "Seguridad";
+            // 
+            // creaciónRolesYPrivilegiosToolStripMenuItem
+            // 
+            this.creaciónRolesYPrivilegiosToolStripMenuItem.Name = "creaciónRolesYPrivilegiosToolStripMenuItem";
+            this.creaciónRolesYPrivilegiosToolStripMenuItem.Size = new System.Drawing.Size(218, 22);
+            this.creaciónRolesYPrivilegiosToolStripMenuItem.Text = "Creación Roles y Privilegios";
+            this.creaciónRolesYPrivilegiosToolStripMenuItem.Click += new System.EventHandler(this.creaciónRolesYPrivilegiosToolStripMenuItem_Click);
+            // 
             // mdiMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -101,6 +119,8 @@
         private System.Windows.Forms.ToolStripMenuItem administrarEstudiantesToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem administrarProfesoresToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem seguridadToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem creaciónRolesYPrivilegiosToolStripMenuItem;
     }
 }
 

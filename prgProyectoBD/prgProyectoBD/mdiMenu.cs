@@ -16,6 +16,7 @@ namespace prgProyectoBD
     {
         private frmAdmEstudiantes frmAdmEst;
         private frmAdmProfesores frmAdmProf;
+        private frmRolesAndPrivileges rolesYPrivilegios;
 
         public mdiMenu()
         {
@@ -39,6 +40,12 @@ namespace prgProyectoBD
         {
             frmAdmProf = new frmAdmProfesores();
             frmAdmProf.Show();
+        }
+
+        private void creaciónRolesYPrivilegiosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            rolesYPrivilegios = new frmRolesAndPrivileges();
+            rolesYPrivilegios.Show();
         }
     }
 }
