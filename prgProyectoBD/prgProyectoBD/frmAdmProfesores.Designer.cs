@@ -200,7 +200,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ClientSize = new System.Drawing.Size(691, 423);
+            this.ClientSize = new System.Drawing.Size(688, 423);
             this.Controls.Add(this.dgvProfesores);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.GroupBox);
