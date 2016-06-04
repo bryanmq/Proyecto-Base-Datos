@@ -31,5 +31,10 @@ namespace prgProyectoBD
         {
 
         }
+
+        private void frmRolesAndPrivileges_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

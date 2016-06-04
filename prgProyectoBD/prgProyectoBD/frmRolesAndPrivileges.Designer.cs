@@ -142,7 +142,7 @@
             // checkBox3
             // 
             this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(36, 153);
+            this.checkBox3.Location = new System.Drawing.Point(36, 154);
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(88, 22);
             this.checkBox3.TabIndex = 2;
@@ -162,7 +162,7 @@
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(36, 76);
+            this.checkBox1.Location = new System.Drawing.Point(36, 78);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(76, 22);
             this.checkBox1.TabIndex = 0;
@@ -203,17 +203,17 @@
             this.listView1.Location = new System.Drawing.Point(34, 307);
             this.listView1.Name = "listView1";
             this.listView1.ShowItemToolTips = true;
-            this.listView1.Size = new System.Drawing.Size(340, 97);
+            this.listView1.Size = new System.Drawing.Size(324, 97);
             this.listView1.TabIndex = 9;
             this.listView1.UseCompatibleStateImageBehavior = false;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(39, 243);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(31, 237);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(158, 18);
+            this.label4.Size = new System.Drawing.Size(180, 18);
             this.label4.TabIndex = 10;
             this.label4.Text = "Lista General de Roles";
             // 
@@ -227,7 +227,7 @@
             this.label5.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold);
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label5.Location = new System.Drawing.Point(38, 264);
+            this.label5.Location = new System.Drawing.Point(30, 264);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(116, 20);
             this.label5.TabIndex = 13;
@@ -251,7 +251,7 @@
             this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscar.Image = global::prgProyectoBD.Properties.Resources.search;
             this.btnBuscar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnBuscar.Location = new System.Drawing.Point(315, 243);
+            this.btnBuscar.Location = new System.Drawing.Point(299, 237);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(59, 64);
             this.btnBuscar.TabIndex = 11;
@@ -261,7 +261,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::prgProyectoBD.Properties.Resources._lock;
-            this.pictureBox2.Location = new System.Drawing.Point(429, 271);
+            this.pictureBox2.Location = new System.Drawing.Point(420, 271);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(117, 133);
             this.pictureBox2.TabIndex = 7;
@@ -298,7 +298,7 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = global::prgProyectoBD.Properties.Resources.edit2;
-            this.pictureBox5.Location = new System.Drawing.Point(137, 148);
+            this.pictureBox5.Location = new System.Drawing.Point(137, 150);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(35, 29);
             this.pictureBox5.TabIndex = 17;
@@ -316,7 +316,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::prgProyectoBD.Properties.Resources.insert;
-            this.pictureBox3.Location = new System.Drawing.Point(137, 71);
+            this.pictureBox3.Location = new System.Drawing.Point(137, 73);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(35, 29);
             this.pictureBox3.TabIndex = 15;
@@ -350,6 +350,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmRolesAndPrivileges";
             this.Text = "frmRolesAndPrivileges";
+            this.Load += new System.EventHandler(this.frmRolesAndPrivileges_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
