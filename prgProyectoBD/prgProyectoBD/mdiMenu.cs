@@ -15,7 +15,7 @@ namespace prgProyectoBD
     public partial class mdiMenu : Form
     {
         private frmAdmEstudiantes frmAdmEst;
-
+        private frmAdmProfesores frmAdmProf;
 
         public mdiMenu()
         {
@@ -33,6 +33,12 @@ namespace prgProyectoBD
             frmAdmEst= new frmAdmEstudiantes();
             frmAdmEst.Show();
 
+        }
+
+        private void administrarProfesoresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmAdmProf = new frmAdmProfesores();
+            frmAdmProf.Show();
         }
     }
 }

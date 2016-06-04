@@ -31,6 +31,8 @@
             this.menuStrip = new System.Windows.Forms.MenuStrip();
             this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.administrarEstudiantesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.administrarProfesoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -47,7 +49,9 @@
             // archivoToolStripMenuItem
             // 
             this.archivoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.administrarEstudiantesToolStripMenuItem});
+            this.administrarEstudiantesToolStripMenuItem,
+            this.toolStripSeparator1,
+            this.administrarProfesoresToolStripMenuItem});
             this.archivoToolStripMenuItem.Name = "archivoToolStripMenuItem";
             this.archivoToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
             this.archivoToolStripMenuItem.Text = "Archivo";
@@ -58,6 +62,18 @@
             this.administrarEstudiantesToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
             this.administrarEstudiantesToolStripMenuItem.Text = "Administrar Estudiantes";
             this.administrarEstudiantesToolStripMenuItem.Click += new System.EventHandler(this.administrarEstudiantesToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(196, 6);
+            // 
+            // administrarProfesoresToolStripMenuItem
+            // 
+            this.administrarProfesoresToolStripMenuItem.Name = "administrarProfesoresToolStripMenuItem";
+            this.administrarProfesoresToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
+            this.administrarProfesoresToolStripMenuItem.Text = "Administrar Profesores";
+            this.administrarProfesoresToolStripMenuItem.Click += new System.EventHandler(this.administrarProfesoresToolStripMenuItem_Click);
             // 
             // mdiMenu
             // 
@@ -83,6 +99,8 @@
         private System.Windows.Forms.MenuStrip menuStrip;
         private System.Windows.Forms.ToolStripMenuItem archivoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem administrarEstudiantesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripMenuItem administrarProfesoresToolStripMenuItem;
     }
 }
 
