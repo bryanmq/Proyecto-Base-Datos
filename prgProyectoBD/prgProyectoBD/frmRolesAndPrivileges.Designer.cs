@@ -230,6 +230,7 @@
             this.btnSalir.Size = new System.Drawing.Size(64, 57);
             this.btnSalir.TabIndex = 9;
             this.btnSalir.UseVisualStyleBackColor = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // btnGuardar
             // 
@@ -347,6 +348,7 @@
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmRolesAndPrivileges";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmRolesAndPrivileges";
             this.Load += new System.EventHandler(this.frmRolesAndPrivileges_Load);
             this.groupBox1.ResumeLayout(false);
