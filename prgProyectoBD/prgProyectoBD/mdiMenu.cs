@@ -47,5 +47,15 @@ namespace prgProyectoBD
             rolesYPrivilegios = new frmRolesAndPrivileges();
             rolesYPrivilegios.Show();
         }
+
+        private void configuraciónPersonalToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void seguridadToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
