@@ -55,24 +55,40 @@ namespace prgProyectoBD
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            estudiante = new Estudiante(txtCarnet.Text, txtNombre.Text, txtDireccion.Text, Convert.ToDateTime(dtpFechaNacimiento.Text), mskTel.Text, txtEmail.Text);
-            if (index == 1)
+            if (validacionCampos())
             {
-                lnEstudiantes.agregarEstudiante(estudiante);
-                refresh();
-                this.Dispose();
+                estudiante = new Estudiante(txtCarnet.Text, txtNombre.Text, txtDireccion.Text, Convert.ToDateTime(dtpFechaNacimiento.Text), mskTel.Text, txtEmail.Text);
+                if (index == 1)
+                {
+                    lnEstudiantes.agregarEstudiante(estudiante);
+                    refresh();
+                    this.Dispose();
+                }
+                else
+                {
+                    lnEstudiantes.modificarEstudiante(estudiante);
+                    refresh();
+                    this.Dispose();
+                }
             }
             else
             {
-                lnEstudiantes.modificarEstudiante(estudiante);
-                refresh();
-                this.Dispose();
+                MessageBox.Show("Existen Campos Vacios");
             }
         }
 
         public void refresh()
         {
             dgvEstudiantes.DataSource = lnEstudiantes.listaEstudiantes();
+        }
+
+        public Boolean validacionCampos()
+        {
+            if (txtCarnet.Text != "" && txtNombre.Text != "" && txtDireccion.Text != "" && mskTel.Text != "" && txtEmail.Text != "")
+            {
+                return true;
+            }
+            return false;
         }
     }
 }
