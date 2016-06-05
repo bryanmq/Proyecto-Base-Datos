@@ -182,6 +182,7 @@
             this.dgvProfesores.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvProfesores.Size = new System.Drawing.Size(631, 196);
             this.dgvProfesores.TabIndex = 14;
+            this.dgvProfesores.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProfesores_CellContentClick);
             // 
             // label1
             // 

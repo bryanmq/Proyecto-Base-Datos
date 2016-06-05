@@ -59,5 +59,11 @@ namespace prgProyectoBD
         {
             dgvEstudiantes.DataSource = lnEstudiantes.listaEstudiantes();
         }
+
+        private void dgvEstudiantes_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            frmEstudiantes frmEst = new frmEstudiantes(2, lnEstudiantes, this.dgvEstudiantes);
+            frmEst.Show();
+        }
     }
 }

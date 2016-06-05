@@ -58,5 +58,11 @@ namespace prgProyectoBD
         {
 
         }
+
+        private void dgvProfesores_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            frmProfesores frmProf = new frmProfesores(2, lnProfesores, this.dgvProfesores);
+            frmProf.Show();
+        }
     }
 }
