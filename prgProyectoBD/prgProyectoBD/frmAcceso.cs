@@ -17,19 +17,19 @@ namespace prgProyectoBD
         private mdiMenu mdi;
         public LNUsuarios lnUsuarios;
         public Usuario uUsuario;
-  
+
         public frmAcceso()
         {
             InitializeComponent();
             lnUsuarios = new LNUsuarios();
             uUsuario = new Usuario();
- 
+
         }
 
 
         private Boolean validarCamposVacios()
         {
-            if (txtUsuario.Text != "" && txtClave.Text != "" )
+            if (txtUsuario.Text != "" && txtClave.Text != "")
             {
                 return true;
             }
@@ -38,23 +38,25 @@ namespace prgProyectoBD
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            if (validarCamposVacios()) { 
-            if (lnUsuarios.verifiarUsuario(txtUsuario.Text, txtClave.Text))
+            if (validarCamposVacios())
             {
-                mdi = new mdiMenu();
-                mdi.Show();
-                txtUsuario.Text = "";
-                txtClave.Text = "";
+                if (lnUsuarios.verifiarUsuario(txtUsuario.Text, txtClave.Text))
+                {
+                   
+                    mdi = new mdiMenu();
+                    mdi.Show();
+
+                }
+                else
+                {
+                    MessageBox.Show("Usuario o contraseña incorrecto");
+                }
             }
             else
             {
-                MessageBox.Show("Usuario o contraseña incorrecto");
-            }
-        }else 
-        {
                 MessageBox.Show("Llene todos los campos para seguir");
-        }
-            
+            }
+
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
