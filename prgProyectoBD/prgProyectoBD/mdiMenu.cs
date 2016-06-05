@@ -15,7 +15,8 @@ namespace prgProyectoBD
     public partial class mdiMenu : Form
     {
         private frmAdmEstudiantes frmAdmEst;
-
+        private frmAdmProfesores frmAdmProf;
+        private frmRolesAndPrivileges rolesYPrivilegios;
 
         public mdiMenu()
         {
@@ -32,6 +33,28 @@ namespace prgProyectoBD
         {
             frmAdmEst= new frmAdmEstudiantes();
             frmAdmEst.Show();
+
+        }
+
+        private void administrarProfesoresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmAdmProf = new frmAdmProfesores();
+            frmAdmProf.Show();
+        }
+
+        private void creaciónRolesYPrivilegiosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            rolesYPrivilegios = new frmRolesAndPrivileges();
+            rolesYPrivilegios.Show();
+        }
+
+        private void configuraciónPersonalToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void seguridadToolStripMenuItem_Click(object sender, EventArgs e)
+        {
 
         }
     }
