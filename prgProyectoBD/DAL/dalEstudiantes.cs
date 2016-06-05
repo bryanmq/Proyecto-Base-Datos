@@ -18,7 +18,7 @@ namespace DAL
             List<Estudiante> estudiantes = new List<Estudiante>();
 
             MySqlCommand cmd = new MySqlCommand();
-            cmd.CommandText = "Select carnet, nombre, direccion, fechaNacimiento, telefono, email from proyectoABD.tbEstudiante";
+            cmd.CommandText = "Select carnetEstudiante, nombre, direccion, fechaNacimiento, telefono, email from proyectoABD.tbEstudiante";
             string connectionString = ConfigurationManager.ConnectionStrings["db"].ConnectionString;
 
             MySqlConnection con = new MySqlConnection(connectionString);
@@ -53,16 +53,16 @@ namespace DAL
             return estudiantes;
         }
 
-        public Estudiante getEstudiante(String carnet)
+        public Estudiante getEstudiante(String carnetEstudiante)
         {
             Estudiante estudiante = new Estudiante();
 
             MySqlCommand cmd = new MySqlCommand();
-            cmd.CommandText = "Select carnet, nombre, direccion, fechaNacimiento, telefono, email from proyectoABD.tbEstudiante where @carnet=carnet";
+            cmd.CommandText = "Select carnetEstudiante, nombre, direccion, fechaNacimiento, telefono, email from proyectoABD.tbEstudiante where @carnetEstudiante=carnetEstudiante";
             string connectionString = ConfigurationManager.ConnectionStrings["db"].ConnectionString;
 
             MySqlConnection con = new MySqlConnection(connectionString);
-            cmd.Parameters.Add("@carnet", MySqlDbType.String).Value = carnet;
+            cmd.Parameters.Add("@carnetEstudiante", MySqlDbType.String).Value = carnetEstudiante;
             cmd.Connection = con;
             con.Open();
 
@@ -90,14 +90,14 @@ namespace DAL
             return estudiante;
         }
 
-        public void eliminarEstudiante(String carnet)
+        public void eliminarEstudiante(String carnetEstudiante)
         {
             MySqlCommand cmd = new MySqlCommand();
-            cmd.CommandText = "delete from proyectoABD.tbEstudiante where @carnet=carnet";
+            cmd.CommandText = "delete from proyectoABD.tbEstudiante where @carnetEstudiante=carnetEstudiante";
             string connectionString = ConfigurationManager.ConnectionStrings["db"].ConnectionString;
 
             MySqlConnection con = new MySqlConnection(connectionString);
-            cmd.Parameters.Add("@carnet", MySqlDbType.String).Value = carnet;
+            cmd.Parameters.Add("@carnetEstudiante", MySqlDbType.String).Value = carnetEstudiante;
             cmd.Connection = con;
             con.Open();
             try
@@ -114,11 +114,11 @@ namespace DAL
         public void agregarEstudiante(Estudiante estudiante)
         {
             MySqlCommand cmd = new MySqlCommand();
-            cmd.CommandText = "insert into proyectoABD.tbEstudiante (carnet, nombre, direccion, fechaNacimiento, telefono, email) values(@carnet, @nombre, @direccion, @fechaNacimiento, @telefono, @email)";
+            cmd.CommandText = "insert into proyectoABD.tbEstudiante (carnetEstudiante, nombre, direccion, fechaNacimiento, telefono, email) values(@carnetEstudiante, @nombre, @direccion, @fechaNacimiento, @telefono, @email)";
             string connectionString = ConfigurationManager.ConnectionStrings["db"].ConnectionString;
 
             MySqlConnection con = new MySqlConnection(connectionString);
-            cmd.Parameters.Add("@carnet", MySqlDbType.String).Value = estudiante.carnet;
+            cmd.Parameters.Add("@carnetEstudiante", MySqlDbType.String).Value = estudiante.carnet;
             cmd.Parameters.Add("@nombre", MySqlDbType.String).Value = estudiante.nombre;
             cmd.Parameters.Add("@direccion", MySqlDbType.String).Value = estudiante.direccion;
             cmd.Parameters.Add("@fechaNacimiento", MySqlDbType.Timestamp).Value = estudiante.fechaNacimiento;
@@ -133,10 +133,10 @@ namespace DAL
         public void modificarEstudiante(Estudiante estudiante)
         {
             MySqlCommand cmd = new MySqlCommand();
-            cmd.CommandText = "update proyectoABD.tbEstudiante set nombre=@nombre, direccion=@direccion, fechaNacimiento=@fechaNacimiento, telefono=@telefono, email=@email where carnet=@carnet";
+            cmd.CommandText = "update proyectoABD.tbEstudiante set nombre=@nombre, direccion=@direccion, fechaNacimiento=@fechaNacimiento, telefono=@telefono, email=@email where carnetEstudiante=@carnetEstudiante";
             string connectionString = ConfigurationManager.ConnectionStrings["db"].ConnectionString;
             MySqlConnection con = new MySqlConnection(connectionString);
-            cmd.Parameters.Add("@carnet", MySqlDbType.String).Value = estudiante.carnet;
+            cmd.Parameters.Add("@carnetEstudiante", MySqlDbType.String).Value = estudiante.carnet;
             cmd.Parameters.Add("@nombre", MySqlDbType.String).Value = estudiante.nombre;
             cmd.Parameters.Add("@direccion", MySqlDbType.String).Value = estudiante.direccion;
             cmd.Parameters.Add("@fechaNacimiento", MySqlDbType.Timestamp).Value = estudiante.fechaNacimiento;

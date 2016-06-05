@@ -17,9 +17,9 @@ namespace Lógica
             dalUsuarios = new DALUsuarios();
         }
 
-        public Boolean verifiarUsuario(String usuario, String clave)
+        public Boolean verifiarUsuario(String codigoUsuario, String clave)
         {
-            if (dalUsuarios.verificarUsuario(usuario, clave))
+            if (dalUsuarios.verificarUsuario(codigoUsuario, clave))
             {
                 return true;
             }

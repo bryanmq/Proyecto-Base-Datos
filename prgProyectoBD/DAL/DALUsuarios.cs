@@ -11,14 +11,14 @@ namespace DAL
 {
     public class DALUsuarios
     {
-        public Boolean verificarUsuario(String nombre, String clave)
+        public Boolean verificarUsuario(String codigoUsuario, String clave)
         {
             MySqlCommand cmd = new MySqlCommand();
-            cmd.CommandText = "Select idUsuario from proyectoABD.tbUsuario where @nombre=nombre AND @clave=clave";
+            cmd.CommandText = "Select codigoUsuario from proyectoABD.tbUsuario where @clave=clave";
             string connectionString = ConfigurationManager.ConnectionStrings["db"].ConnectionString;
 
             MySqlConnection con = new MySqlConnection(connectionString);
-            cmd.Parameters.Add("@nombre", MySqlDbType.String).Value = nombre;
+            cmd.Parameters.Add("@codigoUsuario", MySqlDbType.String).Value = codigoUsuario;
             cmd.Parameters.Add("@clave", MySqlDbType.String).Value = clave;
             cmd.Connection = con;
             con.Open();
