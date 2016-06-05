@@ -62,6 +62,9 @@ namespace prgProyectoBD
             Application.Exit();
         }
 
-        
+        private void frmAcceso_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

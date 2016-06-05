@@ -135,6 +135,7 @@ namespace DAL
             cmd.CommandText = "update proyectoABD.tbProfesor set nombre=@nombre, direccion=@direccion, fechaNacimiento=@fechaNacimiento, telefono=@telefono, email=@email where idProfesor=@idProfesor";
             string connectionString = ConfigurationManager.ConnectionStrings["db"].ConnectionString;
             MySqlConnection con = new MySqlConnection(connectionString);
+            cmd.Parameters.Add("@idProfesor", MySqlDbType.String).Value = profesor.idProfesor;
             cmd.Parameters.Add("@nombre", MySqlDbType.String).Value = profesor.nombre;
             cmd.Parameters.Add("@direccion", MySqlDbType.String).Value = profesor.direccion;
             cmd.Parameters.Add("@fechaNacimiento", MySqlDbType.Timestamp).Value = profesor.fechaNacimiento;
