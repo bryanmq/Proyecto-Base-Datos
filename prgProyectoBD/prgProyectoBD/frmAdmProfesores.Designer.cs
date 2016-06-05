@@ -111,7 +111,7 @@
             this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscar.Image = global::prgProyectoBD.Properties.Resources.search;
             this.btnBuscar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnBuscar.Location = new System.Drawing.Point(595, 20);
+            this.btnBuscar.Location = new System.Drawing.Point(606, 21);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(59, 64);
             this.btnBuscar.TabIndex = 2;
