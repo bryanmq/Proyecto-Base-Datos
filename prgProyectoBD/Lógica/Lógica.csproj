@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="LNEstudiantes.cs" />
+    <Compile Include="LNProfesores.cs" />
     <Compile Include="LNUsuarios.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
