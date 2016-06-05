@@ -15,19 +15,45 @@ namespace prgProyectoBD
     public partial class frmAcceso : Form
     {
         private mdiMenu mdi;
+        public LNUsuarios lnUsuarios;
+        public Usuario uUsuario;
   
         public frmAcceso()
         {
             InitializeComponent();
+            lnUsuarios = new LNUsuarios();
+            uUsuario = new Usuario();
  
         }
 
-        
+
+        private Boolean validarCamposVacios()
+        {
+            if (txtUsuario.Text != "" && txtClave.Text != "" )
+            {
+                return true;
+            }
+            return false;
+        }
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            mdi = new mdiMenu();
-            mdi.Show();
+            if (validarCamposVacios()) { 
+            if (lnUsuarios.verifiarUsuario(txtUsuario.Text, txtClave.Text))
+            {
+                mdi = new mdiMenu();
+                mdi.Show();
+                txtUsuario.Text = "";
+                txtClave.Text = "";
+            }
+            else
+            {
+                MessageBox.Show("Usuario o contraseña incorrecto");
+            }
+        }else 
+        {
+                MessageBox.Show("Llene todos los campos para seguir");
+        }
             
         }
 
