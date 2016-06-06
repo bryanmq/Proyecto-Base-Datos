@@ -2,3 +2,8 @@ C:\Users\Bryan\Source\Repos\Proyecto-Base-Datos\prgProyectoBD\Entidades\bin\Debu
 C:\Users\Bryan\Source\Repos\Proyecto-Base-Datos\prgProyectoBD\Entidades\bin\Debug\Entidades.pdb
 C:\Users\Bryan\Source\Repos\Proyecto-Base-Datos\prgProyectoBD\Entidades\obj\Debug\Entidades.dll
 C:\Users\Bryan\Source\Repos\Proyecto-Base-Datos\prgProyectoBD\Entidades\obj\Debug\Entidades.pdb
+C:\Users\Kevin\Source\Repos\Proyecto-Base-Datos\prgProyectoBD\Entidades\bin\Debug\Entidades.dll
+C:\Users\Kevin\Source\Repos\Proyecto-Base-Datos\prgProyectoBD\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Kevin\Source\Repos\Proyecto-Base-Datos\prgProyectoBD\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
+C:\Users\Kevin\Source\Repos\Proyecto-Base-Datos\prgProyectoBD\Entidades\obj\Debug\Entidades.dll
+C:\Users\Kevin\Source\Repos\Proyecto-Base-Datos\prgProyectoBD\Entidades\obj\Debug\Entidades.pdb
