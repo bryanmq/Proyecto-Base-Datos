@@ -30,9 +30,6 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtRol = new System.Windows.Forms.TextBox();
-            this.txtIdentificación = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
@@ -42,7 +39,6 @@
             this.ckbxModificar = new System.Windows.Forms.CheckBox();
             this.ckbxEliminar = new System.Windows.Forms.CheckBox();
             this.ckbxInsertar = new System.Windows.Forms.CheckBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
@@ -50,70 +46,50 @@
             this.ID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Nombre = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.S = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.txtIDRolBuscar = new System.Windows.Forms.TextBox();
             this.btnBuscar = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(26, 59);
+            this.label1.Location = new System.Drawing.Point(26, 42);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(106, 18);
+            this.label1.Size = new System.Drawing.Size(157, 18);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Nombre del rol";
+            this.label1.Text = "Seleccione un Usuario";
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.comboBox2);
+            this.groupBox1.Controls.Add(this.comboBox1);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.txtRol);
-            this.groupBox1.Controls.Add(this.txtIdentificación);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(34, 36);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(305, 105);
+            this.groupBox1.Size = new System.Drawing.Size(355, 105);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Información Rol";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(26, 34);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(97, 18);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Identificación:";
-            // 
-            // txtRol
-            // 
-            this.txtRol.Location = new System.Drawing.Point(165, 58);
-            this.txtRol.Name = "txtRol";
-            this.txtRol.Size = new System.Drawing.Size(131, 24);
-            this.txtRol.TabIndex = 4;
-            // 
-            // txtIdentificación
-            // 
-            this.txtIdentificación.Location = new System.Drawing.Point(165, 28);
-            this.txtIdentificación.Name = "txtIdentificación";
-            this.txtIdentificación.Size = new System.Drawing.Size(131, 24);
-            this.txtIdentificación.TabIndex = 3;
+            this.groupBox1.Text = "Asignación:";
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.btnSalir);
             this.groupBox2.Controls.Add(this.pictureBox5);
+            this.groupBox2.Controls.Add(this.btnGuardar);
             this.groupBox2.Controls.Add(this.pictureBox4);
             this.groupBox2.Controls.Add(this.pictureBox3);
             this.groupBox2.Controls.Add(this.pictureBox1);
@@ -122,9 +98,9 @@
             this.groupBox2.Controls.Add(this.ckbxEliminar);
             this.groupBox2.Controls.Add(this.ckbxInsertar);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(374, 36);
+            this.groupBox2.Location = new System.Drawing.Point(441, 35);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(188, 191);
+            this.groupBox2.Size = new System.Drawing.Size(188, 354);
             this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Asignación de Permisos:";
@@ -205,18 +181,6 @@
             this.ckbxInsertar.Text = "Insertar";
             this.ckbxInsertar.UseVisualStyleBackColor = true;
             // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.btnSalir);
-            this.groupBox3.Controls.Add(this.btnGuardar);
-            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(34, 147);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(305, 80);
-            this.groupBox3.TabIndex = 5;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Controles:";
-            // 
             // btnSalir
             // 
             this.btnSalir.BackColor = System.Drawing.Color.Transparent;
@@ -225,7 +189,7 @@
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalir.Image = global::prgProyectoBD.Properties.Resources.exit2;
             this.btnSalir.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnSalir.Location = new System.Drawing.Point(202, 17);
+            this.btnSalir.Location = new System.Drawing.Point(106, 205);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(64, 57);
             this.btnSalir.TabIndex = 9;
@@ -240,7 +204,7 @@
             this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardar.Image = global::prgProyectoBD.Properties.Resources.save;
             this.btnGuardar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnGuardar.Location = new System.Drawing.Point(59, 17);
+            this.btnGuardar.Location = new System.Drawing.Point(36, 205);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(64, 57);
             this.btnGuardar.TabIndex = 8;
@@ -253,9 +217,9 @@
             this.label3.ForeColor = System.Drawing.Color.Gold;
             this.label3.Location = new System.Drawing.Point(195, 9);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(206, 23);
+            this.label3.Size = new System.Drawing.Size(246, 23);
             this.label3.TabIndex = 8;
-            this.label3.Text = "ROLES Y PRIVILEGIOS";
+            this.label3.Text = "Asignación de Permisos";
             // 
             // listView1
             // 
@@ -265,7 +229,7 @@
             this.Nombre,
             this.S});
             this.listView1.GridLines = true;
-            this.listView1.Location = new System.Drawing.Point(34, 307);
+            this.listView1.Location = new System.Drawing.Point(20, 107);
             this.listView1.Name = "listView1";
             this.listView1.ShowItemToolTips = true;
             this.listView1.Size = new System.Drawing.Size(324, 97);
@@ -276,23 +240,13 @@
             // 
             this.ID.Text = "ID";
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(31, 237);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(180, 18);
-            this.label4.TabIndex = 10;
-            this.label4.Text = "Lista General de Roles";
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold);
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label5.Location = new System.Drawing.Point(30, 264);
+            this.label5.Location = new System.Drawing.Point(16, 64);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(116, 20);
             this.label5.TabIndex = 13;
@@ -301,9 +255,9 @@
             // txtIDRolBuscar
             // 
             this.txtIDRolBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtIDRolBuscar.Location = new System.Drawing.Point(160, 264);
+            this.txtIDRolBuscar.Location = new System.Drawing.Point(146, 64);
             this.txtIDRolBuscar.Name = "txtIDRolBuscar";
-            this.txtIDRolBuscar.Size = new System.Drawing.Size(149, 26);
+            this.txtIDRolBuscar.Size = new System.Drawing.Size(121, 26);
             this.txtIDRolBuscar.TabIndex = 12;
             // 
             // btnBuscar
@@ -314,36 +268,60 @@
             this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscar.Image = global::prgProyectoBD.Properties.Resources.search;
             this.btnBuscar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnBuscar.Location = new System.Drawing.Point(299, 237);
+            this.btnBuscar.Location = new System.Drawing.Point(285, 37);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(59, 64);
             this.btnBuscar.TabIndex = 11;
             this.btnBuscar.UseVisualStyleBackColor = false;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
-            // pictureBox2
+            // label2
             // 
-            this.pictureBox2.Image = global::prgProyectoBD.Properties.Resources._lock;
-            this.pictureBox2.Location = new System.Drawing.Point(420, 271);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(117, 133);
-            this.pictureBox2.TabIndex = 7;
-            this.pictureBox2.TabStop = false;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(26, 69);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(169, 18);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Seleccione una Pantalla:";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(201, 34);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(133, 26);
+            this.comboBox1.TabIndex = 6;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(201, 66);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(133, 26);
+            this.comboBox2.TabIndex = 7;
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.listView1);
+            this.groupBox4.Controls.Add(this.label5);
+            this.groupBox4.Controls.Add(this.txtIDRolBuscar);
+            this.groupBox4.Controls.Add(this.btnBuscar);
+            this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox4.Location = new System.Drawing.Point(37, 168);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(352, 221);
+            this.groupBox4.TabIndex = 14;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Lista General de Roles";
             // 
             // frmRolesAndPrivileges
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.ClientSize = new System.Drawing.Size(593, 416);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.btnBuscar);
-            this.Controls.Add(this.txtIDRolBuscar);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.listView1);
+            this.ClientSize = new System.Drawing.Size(669, 417);
+            this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -359,8 +337,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.groupBox3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -370,24 +348,18 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox txtRol;
-        private System.Windows.Forms.TextBox txtIdentificación;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.CheckBox ckbxSeleccionar;
         private System.Windows.Forms.CheckBox ckbxModificar;
         private System.Windows.Forms.CheckBox ckbxEliminar;
         private System.Windows.Forms.CheckBox ckbxInsertar;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Button btnSalir;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.ColumnHeader ID;
         private System.Windows.Forms.ColumnHeader Nombre;
         private System.Windows.Forms.ColumnHeader S;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.TextBox txtIDRolBuscar;
@@ -395,5 +367,9 @@
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.GroupBox groupBox4;
     }
 }
