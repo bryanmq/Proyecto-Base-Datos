@@ -52,7 +52,7 @@
             this.GroupBox.Controls.Add(this.txtNombre);
             this.GroupBox.Controls.Add(this.btnEliminar);
             this.GroupBox.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.GroupBox.ForeColor = System.Drawing.Color.Yellow;
+            this.GroupBox.ForeColor = System.Drawing.Color.Black;
             this.GroupBox.Location = new System.Drawing.Point(1, 1);
             this.GroupBox.Name = "GroupBox";
             this.GroupBox.Size = new System.Drawing.Size(687, 103);
@@ -66,11 +66,11 @@
             this.label3.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label3.Location = new System.Drawing.Point(374, 42);
+            this.label3.Location = new System.Drawing.Point(342, 41);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(83, 20);
+            this.label3.Size = new System.Drawing.Size(115, 20);
             this.label3.TabIndex = 9;
-            this.label3.Text = "ID Profesor:";
+            this.label3.Text = "Codigo Profesor:";
             // 
             // txtNombre
             // 
@@ -82,7 +82,7 @@
             // 
             // dgvProfesores
             // 
-            this.dgvProfesores.BackgroundColor = System.Drawing.Color.MediumSpringGreen;
+            this.dgvProfesores.BackgroundColor = System.Drawing.Color.LightSeaGreen;
             this.dgvProfesores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvProfesores.GridColor = System.Drawing.SystemColors.ButtonFace;
             this.dgvProfesores.Location = new System.Drawing.Point(35, 175);
@@ -125,7 +125,7 @@
             this.btnBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnBuscar.FlatAppearance.BorderSize = 0;
             this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuscar.Image = global::prgProyectoBD.Properties.Resources.search;
+            this.btnBuscar.Image = global::prgProyectoBD.Properties.Resources.buscar;
             this.btnBuscar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.btnBuscar.Location = new System.Drawing.Point(606, 21);
             this.btnBuscar.Name = "btnBuscar";
@@ -140,7 +140,7 @@
             this.btnEditar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnEditar.FlatAppearance.BorderSize = 0;
             this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditar.Image = global::prgProyectoBD.Properties.Resources.edit;
+            this.btnEditar.Image = global::prgProyectoBD.Properties.Resources.editar;
             this.btnEditar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.btnEditar.Location = new System.Drawing.Point(120, 28);
             this.btnEditar.Name = "btnEditar";
@@ -155,7 +155,7 @@
             this.btnEliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnEliminar.FlatAppearance.BorderSize = 0;
             this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEliminar.Image = global::prgProyectoBD.Properties.Resources.delete;
+            this.btnEliminar.Image = global::prgProyectoBD.Properties.Resources.eliminar;
             this.btnEliminar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.btnEliminar.Location = new System.Drawing.Point(217, 28);
             this.btnEliminar.Name = "btnEliminar";
@@ -170,7 +170,7 @@
             this.btnSalir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnSalir.FlatAppearance.BorderSize = 0;
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSalir.Image = global::prgProyectoBD.Properties.Resources.exit;
+            this.btnSalir.Image = global::prgProyectoBD.Properties.Resources.salir;
             this.btnSalir.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.btnSalir.Location = new System.Drawing.Point(588, 377);
             this.btnSalir.Name = "btnSalir";
@@ -184,7 +184,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ClientSize = new System.Drawing.Size(688, 487);
+            this.ClientSize = new System.Drawing.Size(688, 468);
             this.Controls.Add(this.dgvProfesores);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.GroupBox);
