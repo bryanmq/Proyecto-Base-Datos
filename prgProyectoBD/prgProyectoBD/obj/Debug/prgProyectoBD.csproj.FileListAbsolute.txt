@@ -44,3 +44,6 @@ C:\Users\Kevin\Source\Repos\Proyecto-Base-Datos\prgProyectoBD\prgProyectoBD\obj\
 C:\Users\Kevin\Source\Repos\Proyecto-Base-Datos\prgProyectoBD\prgProyectoBD\obj\Debug\prgProyectoBD.mdiMenu.resources
 C:\Users\Kevin\Source\Repos\Proyecto-Base-Datos\prgProyectoBD\prgProyectoBD\obj\Debug\prgProyectoBD.Properties.Resources.resources
 C:\Users\Kevin\Source\Repos\Proyecto-Base-Datos\prgProyectoBD\prgProyectoBD\obj\Debug\prgProyectoBD.csproj.GenerateResource.Cache
+C:\Users\Fernanda Mata\Source\Repos\Proyecto-Base-Datos\prgProyectoBD\prgProyectoBD\bin\Debug\prgProyectoBD.exe.config
+C:\Users\Fernanda Mata\Source\Repos\Proyecto-Base-Datos\prgProyectoBD\prgProyectoBD\obj\Debug\prgProyectoBD.exe
+C:\Users\Fernanda Mata\Source\Repos\Proyecto-Base-Datos\prgProyectoBD\prgProyectoBD\obj\Debug\prgProyectoBD.pdb
