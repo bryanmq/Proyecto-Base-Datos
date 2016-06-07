@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DALCursos.cs" />
     <Compile Include="DALEstudiantes.cs" />
     <Compile Include="DALProfesores.cs" />
     <Compile Include="DALUsuarios.cs" />
