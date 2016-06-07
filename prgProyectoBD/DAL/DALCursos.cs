@@ -124,6 +124,42 @@ namespace DAL
         //**********************************************************************
         //insertar en TBCURSO
         //***********************************************************************
+        public void insertarCurso(Curso curso)
+        {
+            MySqlCommand cmd = new MySqlCommand();
+            cmd.CommandText = "insert into proyectoABD.tbCurso (codigoCurso, descripcion, idProfesor, creditos, aula) values(@carnetEstudiante, @nombre, @direccion, @fechaNacimiento, @telefono, @email)";
+            string connectionString = ConfigurationManager.ConnectionStrings["db"].ConnectionString;
 
+            MySqlConnection con = new MySqlConnection(connectionString);
+            cmd.Parameters.Add("@codigoCurso", MySqlDbType.String).Value = curso.mCodigoCurso;
+            cmd.Parameters.Add("@descripcion", MySqlDbType.String).Value = curso.mDescripcion;
+            cmd.Parameters.Add("@idProfesor", MySqlDbType.String).Value = curso.mIDProfesor;
+            cmd.Parameters.Add("@creditos", MySqlDbType.Timestamp).Value = curso.mCreditos;
+            cmd.Parameters.Add("@aula", MySqlDbType.String).Value = curso.mAula;
+
+            cmd.Connection = con;
+            con.Open();
+            cmd.ExecuteReader();
+
+        }
+
+        //**************************************************************************
+        //Modificacion de Curso;;;;;:::;:;:;:;::::;:;:;;:;;:;:;:;:;:;:;:;:;:;:;:;:;:
+        //**************************************************************************
+        public void modificarCurso(Curso curso)
+        {
+            MySqlCommand cmd = new MySqlCommand();
+            cmd.CommandText = "update proyectoABD.tbEstudiante set nombre=@nombre, direccion=@direccion, fechaNacimiento=@fechaNacimiento, telefono=@telefono, email=@email where carnetEstudiante=@carnetEstudiante";
+            string connectionString = ConfigurationManager.ConnectionStrings["db"].ConnectionString;
+            MySqlConnection con = new MySqlConnection(connectionString);
+            cmd.Parameters.Add("@codigoCurso", MySqlDbType.String).Value = curso.mCodigoCurso;
+            cmd.Parameters.Add("@descipcion", MySqlDbType.String).Value = curso.mDescripcion;
+            cmd.Parameters.Add("@idProfesor", MySqlDbType.Timestamp).Value = curso.mIDProfesor;
+            cmd.Parameters.Add("@creditos", MySqlDbType.String).Value = curso.mCreditos;
+            cmd.Parameters.Add("@aula", MySqlDbType.String).Value = curso.mAula;
+            cmd.Connection = con;
+            con.Open();
+            cmd.ExecuteNonQuery();
+        }
     }
 }

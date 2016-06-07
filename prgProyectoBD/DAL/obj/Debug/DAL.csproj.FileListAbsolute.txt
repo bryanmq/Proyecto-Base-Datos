@@ -6,11 +6,3 @@ C:\Users\Bryan\Source\Repos\Proyecto-Base-Datos\prgProyectoBD\DAL\bin\Debug\Enti
 C:\Users\Bryan\Source\Repos\Proyecto-Base-Datos\prgProyectoBD\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
 C:\Users\Bryan\Source\Repos\Proyecto-Base-Datos\prgProyectoBD\DAL\obj\Debug\DAL.dll
 C:\Users\Bryan\Source\Repos\Proyecto-Base-Datos\prgProyectoBD\DAL\obj\Debug\DAL.pdb
-C:\Users\Kevin\Source\Repos\Proyecto-Base-Datos\prgProyectoBD\DAL\bin\Debug\DAL.dll
-C:\Users\Kevin\Source\Repos\Proyecto-Base-Datos\prgProyectoBD\DAL\bin\Debug\DAL.pdb
-C:\Users\Kevin\Source\Repos\Proyecto-Base-Datos\prgProyectoBD\DAL\bin\Debug\Entidades.dll
-C:\Users\Kevin\Source\Repos\Proyecto-Base-Datos\prgProyectoBD\DAL\bin\Debug\MySql.Data.dll
-C:\Users\Kevin\Source\Repos\Proyecto-Base-Datos\prgProyectoBD\DAL\bin\Debug\Entidades.pdb
-C:\Users\Kevin\Source\Repos\Proyecto-Base-Datos\prgProyectoBD\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
-C:\Users\Kevin\Source\Repos\Proyecto-Base-Datos\prgProyectoBD\DAL\obj\Debug\DAL.dll
-C:\Users\Kevin\Source\Repos\Proyecto-Base-Datos\prgProyectoBD\DAL\obj\Debug\DAL.pdb
