@@ -22,3 +22,4 @@ C:\Users\Bryan\Source\Repos\Proyecto-Base-Datos\prgProyectoBD\prgProyectoBD\obj\
 C:\Users\Bryan\Source\Repos\Proyecto-Base-Datos\prgProyectoBD\prgProyectoBD\obj\Debug\prgProyectoBD.exe
 C:\Users\Bryan\Source\Repos\Proyecto-Base-Datos\prgProyectoBD\prgProyectoBD\obj\Debug\prgProyectoBD.pdb
 C:\Users\Kevin\Source\Repos\Proyecto-Base-Datos\prgProyectoBD\prgProyectoBD\bin\Debug\prgProyectoBD.exe.config
+C:\Users\Bryan\Source\Repos\Proyecto-Base-Datos\prgProyectoBD\prgProyectoBD\obj\Debug\prgProyectoBD.frmAdmUsuarios.resources

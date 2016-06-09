@@ -20,6 +20,12 @@ namespace prgProyectoBD
             this.lnProfesores = lnProfesores;
         }
 
+        public frmProfesores(int index)
+        {
+            InitializeComponent();
+            this.index = index;
+        }
+
         private void frmProfesores_Load(object sender, EventArgs e)
         {
             if (index != 1)

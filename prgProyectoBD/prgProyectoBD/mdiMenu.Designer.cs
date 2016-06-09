@@ -35,15 +35,16 @@
             this.administrarProfesoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.seguridadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.creaciónRolesYPrivilegiosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.asignaciónDePantallasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.configuraciónPersonalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cambioContraseñaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirDelSistemaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.controlUsuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -95,7 +96,8 @@
             this.toolStripSeparator2,
             this.asignaciónDePantallasToolStripMenuItem,
             this.toolStripSeparator3,
-            this.configuraciónPersonalToolStripMenuItem});
+            this.configuraciónPersonalToolStripMenuItem,
+            this.controlUsuarioToolStripMenuItem});
             this.seguridadToolStripMenuItem.Name = "seguridadToolStripMenuItem";
             this.seguridadToolStripMenuItem.Size = new System.Drawing.Size(95, 20);
             this.seguridadToolStripMenuItem.Text = "Configuración";
@@ -108,11 +110,21 @@
             this.creaciónRolesYPrivilegiosToolStripMenuItem.Text = "Creación Roles y Privilegios";
             this.creaciónRolesYPrivilegiosToolStripMenuItem.Click += new System.EventHandler(this.creaciónRolesYPrivilegiosToolStripMenuItem_Click);
             // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(215, 6);
+            // 
             // asignaciónDePantallasToolStripMenuItem
             // 
             this.asignaciónDePantallasToolStripMenuItem.Name = "asignaciónDePantallasToolStripMenuItem";
             this.asignaciónDePantallasToolStripMenuItem.Size = new System.Drawing.Size(218, 22);
             this.asignaciónDePantallasToolStripMenuItem.Text = "Asignación de Pantallas";
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(215, 6);
             // 
             // configuraciónPersonalToolStripMenuItem
             // 
@@ -128,16 +140,6 @@
             this.cambioContraseñaToolStripMenuItem.Name = "cambioContraseñaToolStripMenuItem";
             this.cambioContraseñaToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
             this.cambioContraseñaToolStripMenuItem.Text = "Cambio Contraseña";
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(215, 6);
-            // 
-            // toolStripSeparator3
-            // 
-            this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(215, 6);
             // 
             // salirToolStripMenuItem
             // 
@@ -166,6 +168,13 @@
             this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
             this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
             this.ayudaToolStripMenuItem.Text = "Ayuda";
+            // 
+            // controlUsuarioToolStripMenuItem
+            // 
+            this.controlUsuarioToolStripMenuItem.Name = "controlUsuarioToolStripMenuItem";
+            this.controlUsuarioToolStripMenuItem.Size = new System.Drawing.Size(218, 22);
+            this.controlUsuarioToolStripMenuItem.Text = "Control Usuarios";
+            this.controlUsuarioToolStripMenuItem.Click += new System.EventHandler(this.controlUsuarioToolStripMenuItem_Click);
             // 
             // mdiMenu
             // 
@@ -204,6 +213,7 @@
         private System.Windows.Forms.ToolStripMenuItem salirDelSistemaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem acercaDeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ayudaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem controlUsuarioToolStripMenuItem;
     }
 }
 

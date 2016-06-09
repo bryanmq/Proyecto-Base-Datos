@@ -55,7 +55,13 @@ namespace prgProyectoBD
 
         private void seguridadToolStripMenuItem_Click(object sender, EventArgs e)
         {
+         
+        }
 
+        private void controlUsuarioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmAdmUsuarios frmAdminUsers = new frmAdmUsuarios();
+            frmAdminUsers.Show();
         }
     }
 }

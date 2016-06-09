@@ -38,14 +38,14 @@ namespace prgProyectoBD
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            if (validarCamposVacios())
+            /*if (validarCamposVacios())
             {
                 if (lnUsuarios.verifiarUsuario(txtUsuario.Text, txtClave.Text))
                 {
-                   
+                  */ 
                     mdi = new mdiMenu();
                     mdi.Show();
-
+        /*
                 }
                 else
                 {
@@ -55,7 +55,7 @@ namespace prgProyectoBD
             else
             {
                 MessageBox.Show("Llene todos los campos para seguir");
-            }
+            }*/
 
         }
 

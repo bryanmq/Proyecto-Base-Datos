@@ -29,6 +29,12 @@ namespace prgProyectoBD
 
         }
 
+        public frmEstudiantes(int index)
+        {
+            this.index = index;
+            InitializeComponent();
+        }
+
         private void frmEstudiantes_Load(object sender, EventArgs e)
         {
             if (index != 1)

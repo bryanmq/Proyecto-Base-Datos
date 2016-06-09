@@ -124,7 +124,6 @@ namespace DAL
             cmd.Parameters.Add("@fechaNacimiento", MySqlDbType.Timestamp).Value = estudiante.fechaNacimiento;
             cmd.Parameters.Add("@telefono", MySqlDbType.String).Value = estudiante.telefono;
             cmd.Parameters.Add("@email", MySqlDbType.String).Value = estudiante.email;
-            cmd.Connection = con;
             con.Open();
             cmd.ExecuteReader();
 
