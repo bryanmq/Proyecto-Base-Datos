@@ -31,7 +31,7 @@ namespace prgProyectoBD
             if (index != 1)
             {
                 profesor = lnProfesores.listaProfesores(Convert.ToInt32(dgvProfesores.CurrentRow.Cells[0].Value.ToString()));
-                txtIDProfesor.Text =Convert.ToString(profesor.idProfesor);
+                txtCodigoProfesor.Text =Convert.ToString(profesor.codigoUsuario);
                 txtNombre.Text = profesor.nombre;
                 dtpFechaNacimiento.Value = profesor.fechaNacimiento;
                 txtDireccion.Text = profesor.direccion;
@@ -41,7 +41,7 @@ namespace prgProyectoBD
             }
             else
             {
-                txtIDProfesor.Enabled = true;
+                txtCodigoProfesor.Enabled = true;
             }
         }
    //******************************************************************************************
@@ -54,7 +54,7 @@ namespace prgProyectoBD
         {
             if (validacionCampos())
             {
-                profesor = new Profesor(Convert.ToInt32( txtIDProfesor.Text), txtNombre.Text, txtDireccion.Text, Convert.ToDateTime(dtpFechaNacimiento.Text), mskTel.Text, txtEmail.Text);
+                profesor = new Profesor(Convert.ToInt32( txtCodigoProfesor.Text), txtNombre.Text, Convert.ToDateTime(dtpFechaNacimiento.Text),txtDireccion.Text, mskTel.Text, txtEmail.Text);
                 if (index == 1)
                 {
                     lnProfesores.agregarProfesor(profesor);
@@ -81,7 +81,7 @@ namespace prgProyectoBD
 
         public Boolean validacionCampos()
         {
-            if (txtIDProfesor.Text != "" && txtNombre.Text != "" && txtDireccion.Text != "" && mskTel.Text != "" && txtEmail.Text != "")
+            if (txtCodigoProfesor.Text != "" && txtNombre.Text != "" && txtDireccion.Text != "" && mskTel.Text != "" && txtEmail.Text != "")
             {
                 return true;
             }

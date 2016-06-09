@@ -39,5 +39,6 @@ namespace Lógica
         {
             dalProfesores.modificarProfesor(profesor);
         }
+        
     }
 }

@@ -23,3 +23,27 @@ C:\Users\Bryan\Source\Repos\Proyecto-Base-Datos\prgProyectoBD\prgProyectoBD\obj\
 C:\Users\Bryan\Source\Repos\Proyecto-Base-Datos\prgProyectoBD\prgProyectoBD\obj\Debug\prgProyectoBD.pdb
 C:\Users\Kevin\Source\Repos\Proyecto-Base-Datos\prgProyectoBD\prgProyectoBD\bin\Debug\prgProyectoBD.exe.config
 C:\Users\Bryan\Source\Repos\Proyecto-Base-Datos\prgProyectoBD\prgProyectoBD\obj\Debug\prgProyectoBD.frmAdmUsuarios.resources
+C:\Users\Fernanda Mata\Source\Repos\Proyecto-Base-Datos\prgProyectoBD\prgProyectoBD\bin\Debug\prgProyectoBD.exe.config
+C:\Users\Fernanda Mata\Source\Repos\Proyecto-Base-Datos\prgProyectoBD\prgProyectoBD\obj\Debug\prgProyectoBD.exe
+C:\Users\Fernanda Mata\Source\Repos\Proyecto-Base-Datos\prgProyectoBD\prgProyectoBD\obj\Debug\prgProyectoBD.pdb
+C:\Users\Fernanda Mata\Source\Repos\Proyecto-Base-Datos\prgProyectoBD\prgProyectoBD\bin\Debug\prgProyectoBD.exe
+C:\Users\Fernanda Mata\Source\Repos\Proyecto-Base-Datos\prgProyectoBD\prgProyectoBD\bin\Debug\prgProyectoBD.pdb
+C:\Users\Fernanda Mata\Source\Repos\Proyecto-Base-Datos\prgProyectoBD\prgProyectoBD\bin\Debug\DAL.dll
+C:\Users\Fernanda Mata\Source\Repos\Proyecto-Base-Datos\prgProyectoBD\prgProyectoBD\bin\Debug\Entidades.dll
+C:\Users\Fernanda Mata\Source\Repos\Proyecto-Base-Datos\prgProyectoBD\prgProyectoBD\bin\Debug\Lógica.dll
+C:\Users\Fernanda Mata\Source\Repos\Proyecto-Base-Datos\prgProyectoBD\prgProyectoBD\bin\Debug\MySql.Data.dll
+C:\Users\Fernanda Mata\Source\Repos\Proyecto-Base-Datos\prgProyectoBD\prgProyectoBD\bin\Debug\DAL.pdb
+C:\Users\Fernanda Mata\Source\Repos\Proyecto-Base-Datos\prgProyectoBD\prgProyectoBD\bin\Debug\Entidades.pdb
+C:\Users\Fernanda Mata\Source\Repos\Proyecto-Base-Datos\prgProyectoBD\prgProyectoBD\bin\Debug\Lógica.pdb
+C:\Users\Fernanda Mata\Source\Repos\Proyecto-Base-Datos\prgProyectoBD\prgProyectoBD\obj\Debug\prgProyectoBD.csprojResolveAssemblyReference.cache
+C:\Users\Fernanda Mata\Source\Repos\Proyecto-Base-Datos\prgProyectoBD\prgProyectoBD\obj\Debug\prgProyectoBD.frmAdmUsuarios.resources
+C:\Users\Fernanda Mata\Source\Repos\Proyecto-Base-Datos\prgProyectoBD\prgProyectoBD\obj\Debug\prgProyectoBD.frmAdmEstudiantes.resources
+C:\Users\Fernanda Mata\Source\Repos\Proyecto-Base-Datos\prgProyectoBD\prgProyectoBD\obj\Debug\prgProyectoBD.frmAcceso.resources
+C:\Users\Fernanda Mata\Source\Repos\Proyecto-Base-Datos\prgProyectoBD\prgProyectoBD\obj\Debug\prgProyectoBD.frmAdmProfesores.resources
+C:\Users\Fernanda Mata\Source\Repos\Proyecto-Base-Datos\prgProyectoBD\prgProyectoBD\obj\Debug\prgProyectoBD.frmEstudiantes.resources
+C:\Users\Fernanda Mata\Source\Repos\Proyecto-Base-Datos\prgProyectoBD\prgProyectoBD\obj\Debug\prgProyectoBD.frmPantallas.resources
+C:\Users\Fernanda Mata\Source\Repos\Proyecto-Base-Datos\prgProyectoBD\prgProyectoBD\obj\Debug\prgProyectoBD.frmProfesores.resources
+C:\Users\Fernanda Mata\Source\Repos\Proyecto-Base-Datos\prgProyectoBD\prgProyectoBD\obj\Debug\prgProyectoBD.frmRolesAndPrivileges.resources
+C:\Users\Fernanda Mata\Source\Repos\Proyecto-Base-Datos\prgProyectoBD\prgProyectoBD\obj\Debug\prgProyectoBD.mdiMenu.resources
+C:\Users\Fernanda Mata\Source\Repos\Proyecto-Base-Datos\prgProyectoBD\prgProyectoBD\obj\Debug\prgProyectoBD.Properties.Resources.resources
+C:\Users\Fernanda Mata\Source\Repos\Proyecto-Base-Datos\prgProyectoBD\prgProyectoBD\obj\Debug\prgProyectoBD.csproj.GenerateResource.Cache

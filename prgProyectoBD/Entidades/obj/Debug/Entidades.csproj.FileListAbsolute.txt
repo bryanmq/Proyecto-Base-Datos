@@ -3,3 +3,8 @@ C:\Users\Bryan\Source\Repos\Proyecto-Base-Datos\prgProyectoBD\Entidades\bin\Debu
 C:\Users\Bryan\Source\Repos\Proyecto-Base-Datos\prgProyectoBD\Entidades\obj\Debug\Entidades.dll
 C:\Users\Bryan\Source\Repos\Proyecto-Base-Datos\prgProyectoBD\Entidades\obj\Debug\Entidades.pdb
 C:\Users\Bryan\Source\Repos\Proyecto-Base-Datos\prgProyectoBD\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
+C:\Users\Fernanda Mata\Source\Repos\Proyecto-Base-Datos\prgProyectoBD\Entidades\bin\Debug\Entidades.dll
+C:\Users\Fernanda Mata\Source\Repos\Proyecto-Base-Datos\prgProyectoBD\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Fernanda Mata\Source\Repos\Proyecto-Base-Datos\prgProyectoBD\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
+C:\Users\Fernanda Mata\Source\Repos\Proyecto-Base-Datos\prgProyectoBD\Entidades\obj\Debug\Entidades.dll
+C:\Users\Fernanda Mata\Source\Repos\Proyecto-Base-Datos\prgProyectoBD\Entidades\obj\Debug\Entidades.pdb

@@ -8,3 +8,13 @@ C:\Users\Bryan\Source\Repos\Proyecto-Base-Datos\prgProyectoBD\Lógica\bin\Debug\
 C:\Users\Bryan\Source\Repos\Proyecto-Base-Datos\prgProyectoBD\Lógica\obj\Debug\Lógica.csprojResolveAssemblyReference.cache
 C:\Users\Bryan\Source\Repos\Proyecto-Base-Datos\prgProyectoBD\Lógica\obj\Debug\Lógica.dll
 C:\Users\Bryan\Source\Repos\Proyecto-Base-Datos\prgProyectoBD\Lógica\obj\Debug\Lógica.pdb
+C:\Users\Fernanda Mata\Source\Repos\Proyecto-Base-Datos\prgProyectoBD\Lógica\bin\Debug\Lógica.dll
+C:\Users\Fernanda Mata\Source\Repos\Proyecto-Base-Datos\prgProyectoBD\Lógica\bin\Debug\Lógica.pdb
+C:\Users\Fernanda Mata\Source\Repos\Proyecto-Base-Datos\prgProyectoBD\Lógica\bin\Debug\DAL.dll
+C:\Users\Fernanda Mata\Source\Repos\Proyecto-Base-Datos\prgProyectoBD\Lógica\bin\Debug\Entidades.dll
+C:\Users\Fernanda Mata\Source\Repos\Proyecto-Base-Datos\prgProyectoBD\Lógica\bin\Debug\MySql.Data.dll
+C:\Users\Fernanda Mata\Source\Repos\Proyecto-Base-Datos\prgProyectoBD\Lógica\bin\Debug\DAL.pdb
+C:\Users\Fernanda Mata\Source\Repos\Proyecto-Base-Datos\prgProyectoBD\Lógica\bin\Debug\Entidades.pdb
+C:\Users\Fernanda Mata\Source\Repos\Proyecto-Base-Datos\prgProyectoBD\Lógica\obj\Debug\Lógica.csprojResolveAssemblyReference.cache
+C:\Users\Fernanda Mata\Source\Repos\Proyecto-Base-Datos\prgProyectoBD\Lógica\obj\Debug\Lógica.dll
+C:\Users\Fernanda Mata\Source\Repos\Proyecto-Base-Datos\prgProyectoBD\Lógica\obj\Debug\Lógica.pdb

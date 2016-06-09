@@ -18,7 +18,7 @@ namespace DAL
             List<Profesor> profesores = new List<Profesor>();
 
             MySqlCommand cmd = new MySqlCommand();
-            cmd.CommandText = "Select idProfesor,nombre, direccion, fechaNacimiento, telefono, email from proyectoABD.tbProfesor";
+            cmd.CommandText = "Select codigoUsuario,nombre, fechaNacimiento, direccion, telefono, email from proyectoABD.tbProfesor";
             string connectionString = ConfigurationManager.ConnectionStrings["db"].ConnectionString;
 
             MySqlConnection con = new MySqlConnection(connectionString);
@@ -32,10 +32,10 @@ namespace DAL
                     try
                     {
                         Profesor profesor = new Profesor();
-                        profesor.idProfesor = reader.GetInt32(0);
+                        profesor.codigoUsuario = reader.GetInt32(0);
                         profesor.nombre = reader.GetString(1);
-                        profesor.direccion = reader.GetString(2);
-                        profesor.fechaNacimiento = DateTime.Parse(reader.GetString(3));
+                        profesor.fechaNacimiento = DateTime.Parse(reader.GetString(2));
+                        profesor.direccion = reader.GetString(3);
                         profesor.telefono = reader.GetString(4);
                         profesor.email = reader.GetString(5);
                         profesores.Add(profesor);
@@ -52,16 +52,16 @@ namespace DAL
             return profesores;
         }
         //***************************************************************************************************
-        public Profesor getProfesor(int idProfesor)
+        public Profesor getProfesor(int codigoUsuario)
         {
             Profesor profesor = new Profesor();
 
             MySqlCommand cmd = new MySqlCommand();
-            cmd.CommandText = "Select idProfesor,nombre, direccion, fechaNacimiento, telefono, email from proyectoABD.tbProfesor where @idProfesor=idProfesor";
+            cmd.CommandText = "Select codigoUsuario,nombre, fechaNacimiento, direccion, telefono, email from proyectoABD.tbProfesor where @codigoUsuario=codigoUsuario";
             string connectionString = ConfigurationManager.ConnectionStrings["db"].ConnectionString;
 
             MySqlConnection con = new MySqlConnection(connectionString);
-            cmd.Parameters.Add("@idProfesor", MySqlDbType.String).Value = idProfesor;
+            cmd.Parameters.Add("@codigoUsuario", MySqlDbType.String).Value = codigoUsuario;
             cmd.Connection = con;
             con.Open();
 
@@ -71,10 +71,10 @@ namespace DAL
                 {
                     try
                     {
-                        profesor.idProfesor = reader.GetInt32(0);
+                        profesor.codigoUsuario = reader.GetInt32(0);
                         profesor.nombre = reader.GetString(1);
-                        profesor.direccion = reader.GetString(2);
-                        profesor.fechaNacimiento = DateTime.Parse(reader.GetString(3));
+                        profesor.fechaNacimiento = DateTime.Parse(reader.GetString(2));
+                        profesor.direccion = reader.GetString(3);
                         profesor.telefono = reader.GetString(4);
                         profesor.email = reader.GetString(5);
                     }
@@ -89,14 +89,14 @@ namespace DAL
             return profesor;
         }
         //***************************************************************************************************
-        public void eliminarProfesor(int idProfesor)
+        public void eliminarProfesor(int codigoUsuario)
         {
             MySqlCommand cmd = new MySqlCommand();
-            cmd.CommandText = "delete from proyectoABD.tbProfesor where @idProfesor=idProfesor";
+            cmd.CommandText = "delete from proyectoABD.tbProfesor where @codigoUsuario=codigoUsuario";
             string connectionString = ConfigurationManager.ConnectionStrings["db"].ConnectionString;
 
             MySqlConnection con = new MySqlConnection(connectionString);
-            cmd.Parameters.Add("@idProfesor", MySqlDbType.String).Value = idProfesor;
+            cmd.Parameters.Add("@codigoUsuario", MySqlDbType.String).Value = codigoUsuario;
             cmd.Connection = con;
             con.Open();
             try
@@ -113,14 +113,14 @@ namespace DAL
         public void agregarProfesor(Profesor profesor)
         {
             MySqlCommand cmd = new MySqlCommand();
-            cmd.CommandText = "insert into proyectoABD.tbProfesor (idProfesor, nombre, direccion, fechaNacimiento, telefono, email) values(@idProfesor, @nombre, @direccion, @fechaNacimiento, @telefono, @email)";
+            cmd.CommandText = "insert into proyectoABD.tbProfesor (codigoUsuario, nombre,fechaNacimiento, direccion, telefono, email) values(@codigoUsuario, @nombre, @fechaNacimiento, @direccion, @telefono, @email)";
             string connectionString = ConfigurationManager.ConnectionStrings["db"].ConnectionString;
 
             MySqlConnection con = new MySqlConnection(connectionString);
-            cmd.Parameters.Add("@idProfesor", MySqlDbType.String).Value = profesor.idProfesor;
+            cmd.Parameters.Add("@codigoUsuario", MySqlDbType.String).Value = profesor.codigoUsuario;
             cmd.Parameters.Add("@nombre", MySqlDbType.String).Value = profesor.nombre;
-            cmd.Parameters.Add("@direccion", MySqlDbType.String).Value = profesor.direccion;
             cmd.Parameters.Add("@fechaNacimiento", MySqlDbType.Timestamp).Value = profesor.fechaNacimiento;
+            cmd.Parameters.Add("@direccion", MySqlDbType.String).Value = profesor.direccion;
             cmd.Parameters.Add("@telefono", MySqlDbType.String).Value = profesor.telefono;
             cmd.Parameters.Add("@email", MySqlDbType.String).Value = profesor.email;
             cmd.Connection = con;
@@ -132,13 +132,13 @@ namespace DAL
         public void modificarProfesor(Profesor profesor)
         {
             MySqlCommand cmd = new MySqlCommand();
-            cmd.CommandText = "update proyectoABD.tbProfesor set nombre=@nombre, direccion=@direccion, fechaNacimiento=@fechaNacimiento, telefono=@telefono, email=@email where idProfesor=@idProfesor";
+            cmd.CommandText = "update proyectoABD.tbProfesor set nombre=@nombre, direccion=@direccion, fechaNacimiento=@fechaNacimiento, telefono=@telefono, email=@email where codigoUsuario=@codigoUsuario";
             string connectionString = ConfigurationManager.ConnectionStrings["db"].ConnectionString;
             MySqlConnection con = new MySqlConnection(connectionString);
-            cmd.Parameters.Add("@idProfesor", MySqlDbType.String).Value = profesor.idProfesor;
+            cmd.Parameters.Add("@codigoUsuario", MySqlDbType.String).Value = profesor.codigoUsuario;
             cmd.Parameters.Add("@nombre", MySqlDbType.String).Value = profesor.nombre;
-            cmd.Parameters.Add("@direccion", MySqlDbType.String).Value = profesor.direccion;
             cmd.Parameters.Add("@fechaNacimiento", MySqlDbType.Timestamp).Value = profesor.fechaNacimiento;
+            cmd.Parameters.Add("@direccion", MySqlDbType.String).Value = profesor.direccion;
             cmd.Parameters.Add("@telefono", MySqlDbType.String).Value = profesor.telefono;
             cmd.Parameters.Add("@email", MySqlDbType.String).Value = profesor.email;
             cmd.Connection = con;
@@ -146,14 +146,14 @@ namespace DAL
             cmd.ExecuteNonQuery();
         }
         //***************************************************************************************************
-        public void buscarProfesor(int idProfesor)
+        public void buscarProfesor(int codigoUsuario)
         {
             MySqlCommand cmd = new MySqlCommand();
-            cmd.CommandText = "select from proyectoABD.tbProfesor where @idProfesor=idProfesor";
+            cmd.CommandText = "select from proyectoABD.tbProfesor where @codigoUsuario=codigoUsuario";
             string connectionString = ConfigurationManager.ConnectionStrings["db"].ConnectionString;
 
             MySqlConnection con = new MySqlConnection(connectionString);
-            cmd.Parameters.Add("@idProfesor", MySqlDbType.String).Value = idProfesor;
+            cmd.Parameters.Add("@codigoUsuario", MySqlDbType.String).Value = codigoUsuario;
             cmd.Connection = con;
             con.Open();
             try

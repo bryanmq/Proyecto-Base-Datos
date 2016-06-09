@@ -29,20 +29,20 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtDireccion = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.mskTel = new System.Windows.Forms.MaskedTextBox();
             this.dtpFechaNacimiento = new System.Windows.Forms.DateTimePicker();
             this.txtEmail = new System.Windows.Forms.TextBox();
-            this.txtIDProfesor = new System.Windows.Forms.TextBox();
+            this.txtCodigoProfesor = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnAceptar = new System.Windows.Forms.Button();
-            this.txtNombre = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -55,7 +55,7 @@
             this.groupBox1.Controls.Add(this.mskTel);
             this.groupBox1.Controls.Add(this.dtpFechaNacimiento);
             this.groupBox1.Controls.Add(this.txtEmail);
-            this.groupBox1.Controls.Add(this.txtIDProfesor);
+            this.groupBox1.Controls.Add(this.txtCodigoProfesor);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label5);
@@ -66,6 +66,23 @@
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Información del Profesor";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(18, 32);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(114, 15);
+            this.label3.TabIndex = 17;
+            this.label3.Text = "Codigo Profesor:";
+            // 
+            // txtNombre
+            // 
+            this.txtNombre.Location = new System.Drawing.Point(160, 75);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(260, 20);
+            this.txtNombre.TabIndex = 16;
             // 
             // txtDireccion
             // 
@@ -108,12 +125,12 @@
             this.txtEmail.Size = new System.Drawing.Size(177, 20);
             this.txtEmail.TabIndex = 11;
             // 
-            // txtIDProfesor
+            // txtCodigoProfesor
             // 
-            this.txtIDProfesor.Location = new System.Drawing.Point(160, 27);
-            this.txtIDProfesor.Name = "txtIDProfesor";
-            this.txtIDProfesor.Size = new System.Drawing.Size(128, 20);
-            this.txtIDProfesor.TabIndex = 7;
+            this.txtCodigoProfesor.Location = new System.Drawing.Point(160, 27);
+            this.txtCodigoProfesor.Name = "txtCodigoProfesor";
+            this.txtCodigoProfesor.Size = new System.Drawing.Size(128, 20);
+            this.txtCodigoProfesor.TabIndex = 7;
             // 
             // label2
             // 
@@ -181,23 +198,6 @@
             this.btnAceptar.UseVisualStyleBackColor = false;
             this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
-            // txtNombre
-            // 
-            this.txtNombre.Location = new System.Drawing.Point(160, 75);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(260, 20);
-            this.txtNombre.TabIndex = 16;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(18, 32);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(83, 15);
-            this.label3.TabIndex = 17;
-            this.label3.Text = "ID Profesor:";
-            // 
             // frmProfesores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -224,7 +224,7 @@
         private System.Windows.Forms.MaskedTextBox mskTel;
         private System.Windows.Forms.DateTimePicker dtpFechaNacimiento;
         private System.Windows.Forms.TextBox txtEmail;
-        private System.Windows.Forms.TextBox txtIDProfesor;
+        private System.Windows.Forms.TextBox txtCodigoProfesor;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
